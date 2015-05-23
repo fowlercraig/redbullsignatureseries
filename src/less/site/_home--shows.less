@@ -8,9 +8,16 @@
     transition: 300ms ease;
     //opacity: .7;
 
+    @media @min {
+      margin-bottom: @spaced;
+    }
+
     @media @desktop {
       margin-top: -@spaced/2;
+      margin-bottom: 0;
     }
+
+
 
     &:hover, &.stuck {
 
@@ -93,6 +100,14 @@
         background-size: @btnHeight - 30 @btnHeight - 30;
         .center();
 
+      }
+
+      @media @min {
+        margin-bottom: @spaced/2;
+      }
+
+      @media @desktop {
+        margin-bottom: 0;
       }
 
       &:hover {

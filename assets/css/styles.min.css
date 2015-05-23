@@ -5,7 +5,7 @@
  */
 .fs_grid_row,
 .fs-grid .fs-row {
-  width: 300px;
+  width: 98%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -2934,9 +2934,15 @@ body {
   -webkit-transition: 300ms ease;
           transition: 300ms ease;
 }
+@media screen and (min-width: 300px) {
+  .showlist article {
+    margin-bottom: 25px;
+  }
+}
 @media screen and (min-width: 980px) {
   .showlist article {
     margin-top: -12.5px;
+    margin-bottom: 0;
   }
 }
 .showlist article:hover,
@@ -3008,6 +3014,16 @@ body {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+@media screen and (min-width: 300px) {
+  .showlist article .video {
+    margin-bottom: 12.5px;
+  }
+}
+@media screen and (min-width: 980px) {
+  .showlist article .video {
+    margin-bottom: 0;
+  }
 }
 .showlist article .video:hover .play-btn {
   background-color: #cc1c4a;
