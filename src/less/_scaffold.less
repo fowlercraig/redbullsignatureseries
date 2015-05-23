@@ -1,0 +1,60 @@
+@padding-top: 80px;
+
+body,html {
+  //background-color: @black100;
+  overflow: visible;
+}
+
+body {
+  background: @black100 url('/assets/img/bg.jpg') top center no-repeat!important;
+  background-size: cover!important;
+}
+
+.spaced {
+
+  &.top {
+
+    margin-top: @spaced;
+
+  }
+
+}
+
+.arrow {
+
+  &.down {
+
+    hr {
+
+      margin: 0 auto;
+      width: 1px;
+      height: 200px;
+
+    }
+
+    &.short {
+
+      hr {
+
+        height: 60px;
+
+      }
+
+    }
+
+    &:after {
+
+      content: '';
+      display: block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: @white;
+      clear: both;
+      margin: auto;
+
+    }
+
+  }
+
+}
