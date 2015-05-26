@@ -20,7 +20,16 @@
         <?php if (get_field('api_info')):?><a href="<?php the_field('api_info'); ?>">Link to API</a><?php endif; ?>
       </div>
       <hr class="invisible">
-      <div id="page--related-feed" class="fs-row">
+
+      <div class="loading fs-cell fs-lg-2 fs-md-2 fs-sm-2 fs-centered text-center">
+        <div class="spinner">
+          <div class="double-bounce1"></div>
+          <div class="double-bounce2"></div>
+        </div>
+        <h6>Loading Articles</h6>
+      </div>
+
+      <div id="page--related-feed" class="loading fs-row">
         <?php //$articleWidth = 'fs-cell fs-xl-4 fs-lg-6 fs-md-3 fs-sm-3'; ?>
         <?php //include locate_template('parts/show/feed-items.php' ); ?>
         <?php //include locate_template('parts/show/feed-items.php' ); ?>
