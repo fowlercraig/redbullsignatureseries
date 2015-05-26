@@ -1,16 +1,16 @@
 jQuery(document).ready(function() {
 	// Are we on a show page
-	if($("section#page--related").length == 1) {
+	if($("#page--related-feed").length == 1) {
 		jQuery.get(
-		    ajaxurl, 
+		    ajaxurl,
 		    {
 		        'action': 'load_redbull',
 		        'data':   page_id
-		    }, 
+		    },
 		    function(response){
-		        $("section#page--related").html(response);
+		        $("#page--related-feed").html(response);
 		    }
-		);	
+		);
 	}
-	
+
 })
