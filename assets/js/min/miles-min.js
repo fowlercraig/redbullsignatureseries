@@ -1,0 +1,1 @@
+jQuery(document).ready(function(){1==$("#page--related-feed").length&&($("#page--related-feed").css("opacity","0"),jQuery.get(ajaxurl,{action:"load_redbull",data:page_id},function(e){$("#page--related .loading").fadeOut(300),setTimeout(function(){$("#page--related-feed").html(e).transition({opacity:1})},400)}))});

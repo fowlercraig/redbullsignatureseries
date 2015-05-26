@@ -29,7 +29,7 @@
         <h6>Loading Articles</h6>
       </div>
 
-      <div id="page--related-feed" class="loading fs-row">
+      <div id="page--related-feed" class="fs-row">
         <?php //$articleWidth = 'fs-cell fs-xl-4 fs-lg-6 fs-md-3 fs-sm-3'; ?>
         <?php //include locate_template('parts/show/feed-items.php' ); ?>
         <?php //include locate_template('parts/show/feed-items.php' ); ?>
