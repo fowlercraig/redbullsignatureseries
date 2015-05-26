@@ -1,6 +1,3 @@
-
-console.log('only loading on a page that requires api');
-
 jQuery(document).ready(function() {
 	// Are we on a show page
 	if($("section#page--related").length == 1) {
