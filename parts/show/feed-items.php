@@ -8,7 +8,7 @@
 
 ?>
 
-<article id="article--related-article-title" class="<?php echo $articleWidth; ?>">
+<article id="article--related-article-title" class="fs-cell fs-xl-4 fs-lg-6 fs-md-3 fs-sm-3">
   <div class="thumbnail">
     <a href="<?php echo $url; ?>" rel="external">
       <img src="<?php echo $featuredimage; ?>" class="img-responsive">

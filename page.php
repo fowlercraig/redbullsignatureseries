@@ -21,7 +21,7 @@
       </div>
       <hr class="invisible">
       <div id="page--related-feed">
-        <?php $articleWidth = 'fs-cell fs-xl-4 fs-lg-6 fs-md-3 fs-sm-3'; ?>
+        <?php //$articleWidth = 'fs-cell fs-xl-4 fs-lg-6 fs-md-3 fs-sm-3'; ?>
         <?php //include locate_template('parts/show/feed-items.php' ); ?>
         <?php //include locate_template('parts/show/feed-items.php' ); ?>
         <?php //include locate_template('parts/show/feed-items.php' ); ?>
