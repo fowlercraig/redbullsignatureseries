@@ -15,7 +15,7 @@ function load_redbull_content() {
 
     	$featuredimage = $res->featuredimage;
     	$title = $res->title;
-    	$publisheddate = $res->publisheddate;
+    	$publisheddate = date('F j, Y', strtotime($res->publisheddate));
     	$url = $res->url;
     	$teaser = $res->teaser;
 		include(locate_template('parts/show/feed-items.php'));
