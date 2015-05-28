@@ -6,43 +6,17 @@
       <header>
         <h1><?php the_title(); ?></h1>
       </header>
+      <div class="meta text-center">
+        <?php if( get_field('red_bull_tv_link') ):?><a class="btn btn-watch btn-danger" href="<?php the_field('red_bull_tv_link'); ?>">Watch now on RedBull.TV</a><?php endif; ?>
+        <?php if( get_field('youtube_link') ):?><a class="btn btn-watch btn-danger" href="<?php the_field('youtube_link'); ?>">Watch now on Youtube.com</a><?php endif; ?>
+      </div>
     </div>
   </div>
 </section>
 
 <hr class="invisible">
 
-<section id="page--related">
-  <div class="fs-row">
-    <div class="fs-cell fs-lg-11 fs-md-6 fs-sm-3 fs-centered">
-      <h2 class="section-title text-center">API Related Articles</h2>
-      <div class="text-center">
-        <?php if (get_field('api_info')):?><a href="<?php the_field('api_info'); ?>">Link to API</a><?php endif; ?>
-      </div>
-      <hr class="invisible">
-
-      <div class="loading fs-cell fs-lg-2 fs-md-2 fs-sm-2 fs-centered text-center">
-        <div class="spinner">
-          <div class="double-bounce1"></div>
-          <div class="double-bounce2"></div>
-        </div>
-        <h6>Loading Articles</h6>
-      </div>
-
-      <div id="page--related-feed" class="fs-row">
-        <?php //$articleWidth = 'fs-cell fs-xl-4 fs-lg-6 fs-md-3 fs-sm-3'; ?>
-        <?php //include locate_template('parts/show/feed-items.php' ); ?>
-        <?php //include locate_template('parts/show/feed-items.php' ); ?>
-        <?php //include locate_template('parts/show/feed-items.php' ); ?>
-        <?php //include locate_template('parts/show/feed-items.php' ); ?>
-        <?php //include locate_template('parts/show/feed-items.php' ); ?>
-        <?php //include locate_template('parts/show/feed-items.php' ); ?>
-      </div>
-
-    </div>
-  </div>
-</section>
-
+<?php include locate_template('parts/show/related-items.php' ); ?>
 <?php include locate_template('parts/miles.php' ); ?>
 
 <?php get_footer(); ?>

@@ -5,14 +5,13 @@ $settings = array(
   'available_scripts'      => array(
     'jquery-g'             => array('//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js','1.11.1'),
     'plugins'              => array('/assets/js/plugins.min.js'),
-    'miles'                => array('/assets/js/miles.js'),
     'scripts'              => array('/assets/js/scripts.min.js'),
+    'miles'                => array('/assets/js/miles.js'),
   ),
 
   'default_scripts'        => array(
     'jquery-g',
     'plugins',
-    'miles',
     'scripts',
   ),
 

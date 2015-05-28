@@ -2952,7 +2952,7 @@ body {
   margin-bottom: 2.08333333%;
 }
 #page--related article p {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.75);
   font-size: 16px;
   font-size: 1rem;
 }
@@ -2969,6 +2969,11 @@ body {
 #page--related article header h4 a,
 #page--related article header h5 a {
   color: #ffffff;
+}
+#page--related article header h5 {
+  font-size: 15px;
+  font-size: 0.9375rem;
+  text-transform: uppercase;
 }
 #home--above {
   padding-top: 80px;

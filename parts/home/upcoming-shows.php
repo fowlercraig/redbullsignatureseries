@@ -14,6 +14,7 @@
     'posts_per_page' => -1,
     'post_type'      => 'page',
     'post_parent'    => 66,
+    'order'          => 'ASC',
     'paged'          => $paged,
     'meta_query'     => $meta_query
 

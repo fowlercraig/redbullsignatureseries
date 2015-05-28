@@ -9,6 +9,7 @@
 // @codekit-prepend "../bower_components/formstone/dist/js/navigation.js"
 // @codekit-prepend "../bower_components/formstone/dist/js/cookie.js"
 // @codekit-prepend "../bower_components/formstone/dist/js/tabs.js"
+// @codekit-prepend "../bower_components/formstone/dist/js/equalize.js"
 
 // Other Plugins
 

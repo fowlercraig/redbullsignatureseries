@@ -1,4 +1,13 @@
 // @codekit-prepend "featured.js"
+// @codekit-append "miles.js"
+
+function equalized(){
+
+  $("#page--related-feed").equalize({
+    target: "article"
+  });
+
+}
 
 function showClick(){
 

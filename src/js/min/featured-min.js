@@ -1,1 +1,0 @@
-function stickyfeatured(){var t=new Waypoint({handler:function(t){$(".show").toggleClass("stuck","down"===t)},offset:"bottom-in-view"})}
