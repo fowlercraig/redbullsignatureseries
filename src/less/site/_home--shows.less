@@ -183,4 +183,130 @@
 
   }
 
+  &.grid {
+
+    article {
+
+      &.past {
+        //opacity: .75;
+        &:hover {
+          opacity: 1;
+        }
+        .video {
+          position: relative;
+          &:before {
+            content: 'past';
+            position: absolute;
+            background: @rb-red;
+            color: @white;
+            text-transform: uppercase;
+            padding: 0 10px;
+            height: 25px;
+            line-height: 27px;
+            .font_size(11);
+            font-weight: 900;
+            letter-spacing: 1px;
+          }
+        }
+        .desc {
+          h4 {
+            color: #333;
+          }
+        }
+      }
+
+      margin: 0;
+      margin-bottom: @fs-grid-gutter*3;
+
+      @media @min {
+        margin-bottom: @fs-grid-gutter*3;
+      }
+
+      @media @tablet {
+        margin-bottom: @fs-grid-gutter*3;
+      }
+
+      @media @desktop {
+        margin-bottom: @fs-grid-gutter*3;
+      }
+
+      @media @max {
+        margin-bottom: @fs-grid-gutter*3;
+      }
+
+      .video {
+        margin-bottom: 0;
+      }
+
+      .desc {
+
+        padding-top: @spaced/1.5;
+        text-align: left;
+        margin-bottom: 0;
+
+        h1 {
+
+          margin-bottom: 0;
+
+          @media @min {
+            .font_size(32);
+          }
+
+          @media @tablet {
+            .font_size(32);
+          }
+
+          @media @desktop {
+            .font_size(32);
+          }
+
+          @media @max {
+            .font_size(32);
+          }
+
+        }
+
+        h4 {
+
+          @media @min {
+            .font_size(16);
+          }
+
+          @media @tablet {
+            .font_size(16);
+          }
+
+          @media @desktop {
+            .font_size(16);
+          }
+
+          @media @max {
+            .font_size(16);
+          }
+
+        }
+
+      }
+
+      .meta {
+
+        text-align: left;
+        padding-top: 0;
+
+        .btn {
+          color: @rb-red;
+          .font_size(13);
+          padding: 0 4px;
+          margin: 0 -1px;
+          &:hover {
+            color: @white;
+          }
+        }
+
+      }
+
+    }
+
+  }
+
 }

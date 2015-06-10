@@ -3114,6 +3114,126 @@ body {
 .showlist.past:hover {
   opacity: 1;
 }
+.showlist.grid article {
+  margin: 0;
+  margin-bottom: 3.125%;
+}
+.showlist.grid article.past:hover {
+  opacity: 1;
+}
+.showlist.grid article.past .video {
+  position: relative;
+}
+.showlist.grid article.past .video:before {
+  content: 'past';
+  position: absolute;
+  background: #cc1c4a;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 0 10px;
+  height: 25px;
+  line-height: 27px;
+  font-size: 11px;
+  font-size: 0.6875rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+.showlist.grid article.past .desc h4 {
+  color: #333;
+}
+@media screen and (min-width: 300px) {
+  .showlist.grid article {
+    margin-bottom: 3.125%;
+  }
+}
+@media screen and (min-width: 740px) {
+  .showlist.grid article {
+    margin-bottom: 3.125%;
+  }
+}
+@media screen and (min-width: 980px) {
+  .showlist.grid article {
+    margin-bottom: 3.125%;
+  }
+}
+@media screen and (min-width: 1220px) {
+  .showlist.grid article {
+    margin-bottom: 3.125%;
+  }
+}
+.showlist.grid article .video {
+  margin-bottom: 0;
+}
+.showlist.grid article .desc {
+  padding-top: 16.66666667px;
+  text-align: left;
+  margin-bottom: 0;
+}
+.showlist.grid article .desc h1 {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 300px) {
+  .showlist.grid article .desc h1 {
+    font-size: 32px;
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 740px) {
+  .showlist.grid article .desc h1 {
+    font-size: 32px;
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 980px) {
+  .showlist.grid article .desc h1 {
+    font-size: 32px;
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1220px) {
+  .showlist.grid article .desc h1 {
+    font-size: 32px;
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 300px) {
+  .showlist.grid article .desc h4 {
+    font-size: 16px;
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 740px) {
+  .showlist.grid article .desc h4 {
+    font-size: 16px;
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 980px) {
+  .showlist.grid article .desc h4 {
+    font-size: 16px;
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1220px) {
+  .showlist.grid article .desc h4 {
+    font-size: 16px;
+    font-size: 1rem;
+  }
+}
+.showlist.grid article .meta {
+  text-align: left;
+  padding-top: 0;
+}
+.showlist.grid article .meta .btn {
+  color: #cc1c4a;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  padding: 0 4px;
+  margin: 0 -1px;
+}
+.showlist.grid article .meta .btn:hover {
+  color: #ffffff;
+}
 .schedule-list .schedule {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }

@@ -15,8 +15,11 @@
     <div class="fs-row">
       <div class="fs-cell fs-lg-11 fs-md-6 fs-sm-3 fs-centered">
 
-        <h3 class="section-title text-center spaced top">Upcoming Shows</h3>
-        <div class="showlist soon"><?php include locate_template('parts/home/upcoming-shows.php' ); ?></div>
+        <h3 class="section-title text-center spaced top">Current Season</h3>
+        <div class="showlist soon grid fs-row">
+          <?php include locate_template('parts/home/upcoming-show-grid.php' ); ?>
+          <?php include locate_template('parts/home/past-show-grid.php' ); ?>
+        </div>
 
       </div>
     </div>
