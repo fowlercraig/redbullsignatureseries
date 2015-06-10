@@ -1,4 +1,5 @@
 // @codekit-prepend "featured.js"
+// @codekit-prepend "slider.js"
 // @codekit-append "miles.js"
 
 function equalized(){
