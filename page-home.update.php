@@ -15,7 +15,7 @@
 
   <section id="home--recent">
     <div class="fs-row">
-      <div class="fs-cell fs-lg-11 fs-md-6 fs-sm-3 fs-centered">
+      <div class="fs-cell fs-lg-10 fs-md-6 fs-sm-3 fs-centered">
 
         <div class="fs-row royalslider rsMinW" id="home--recent-slider">
           <?php include locate_template('parts/home/past-show-recent.php' ); ?>

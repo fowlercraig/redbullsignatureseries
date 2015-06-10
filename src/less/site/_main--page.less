@@ -74,8 +74,25 @@
     overflow: hidden;
 
     &-slider {
+
       height: 500px;
       position: relative;
+
+      .rsOverflow, .rsVisibleNearbyWrap {
+        overflow: visible;
+      }
+
+      .rsSlide {
+
+        opacity: .25;
+        transition: opacity 500ms ease;
+
+        &.rsActiveSlide {
+          opacity: 1;
+        }
+
+      }
+
     }
 
   }

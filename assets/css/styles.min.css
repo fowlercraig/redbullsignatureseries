@@ -3606,6 +3606,18 @@ body {
   height: 500px;
   position: relative;
 }
+#home--recent-slider .rsOverflow,
+#home--recent-slider .rsVisibleNearbyWrap {
+  overflow: visible;
+}
+#home--recent-slider .rsSlide {
+  opacity: .25;
+  -webkit-transition: opacity 500ms ease;
+          transition: opacity 500ms ease;
+}
+#home--recent-slider .rsSlide.rsActiveSlide {
+  opacity: 1;
+}
 #home--above {
   padding-top: 80px;
   background-size: cover;

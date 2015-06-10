@@ -51,7 +51,7 @@ $(function(){
 
   $(".show").click(function(event){
     //event.preventDefault();
-    showClick();
+    //showClick();
   });
 
 });
