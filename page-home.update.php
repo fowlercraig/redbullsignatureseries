@@ -2,25 +2,16 @@
 
 <div id="home">
 
-  <section id="home--above">
-    <div class="fs-row">
-      <div class="fs-cell fs-lg-11 fs-md-6 fs-sm-3 fs-centered">
-        <div class="content">
-          <!--<iframe src="https://player.vimeo.com/video/58226214?color=ffffff&title=0&byline=0&portrait=0" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
-        </div>
-        <div class="arrow down"><hr></div>
-      </div>
-    </div>
-  </section>
+  <?php include locate_template('parts/home/newest.php' ); ?>
 
   <section id="home--recent">
     <div class="fs-row">
-      <div class="fs-cell fs-lg-10 fs-md-6 fs-sm-3 fs-centered">
-
-        <div class="fs-row royalslider rsMinW" id="home--recent-slider">
+      <div class="fs-cell fs-lg-11 fs-md-6 fs-sm-3 fs-padded centered">
+        <div class="fs-row showlist slider royalslider rsMinW" id="home--recent-slider">
           <?php include locate_template('parts/home/past-show-recent.php' ); ?>
         </div>
-
+        <span class="arrow arrow-left"><a href="#" class="ss-gizmo ss-navigateleft"></a></span>
+        <span class="arrow arrow-right"><a href="#" class="ss-gizmo ss-navigateright"></a></span>
       </div>
     </div>
   </section>
@@ -28,8 +19,8 @@
   <section id="home--shows">
     <div class="fs-row">
       <div class="fs-cell fs-lg-11 fs-md-6 fs-sm-3 fs-centered">
-
-        <h3 class="section-title text-center spaced top">Current Season</h3>
+        <h3 class="section-title text-center spaced top">Coming Up Next</h3>
+        <div class="arrow down short"><hr></div>
         <div class="showlist soon grid fs-row">
           <?php include locate_template('parts/home/upcoming-show-grid.php' ); ?>
           <?php include locate_template('parts/home/past-show-grid.php' ); ?>

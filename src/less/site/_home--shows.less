@@ -2,7 +2,7 @@
 
   padding-top: @spaced + @spaced/2;
 
-  article {
+  .show {
 
     position: relative;
     transition: 300ms ease;
@@ -98,6 +98,7 @@
         text-indent: -99999px;
         background: url('/assets/img/playbutton.png') center center no-repeat;
         background-size: @btnHeight - 30 @btnHeight - 30;
+        z-index: 50;
         .center();
 
       }
@@ -185,7 +186,7 @@
 
   &.grid {
 
-    article {
+    .show {
 
       &.past {
         //opacity: .75;
@@ -215,7 +216,6 @@
         }
       }
 
-      margin: 0;
       margin-bottom: @fs-grid-gutter*3;
 
       @media @min {

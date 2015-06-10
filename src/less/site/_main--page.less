@@ -1,3 +1,17 @@
+#wrapper {
+
+  transition: 300ms ease;
+
+  &.fs-swap-active {
+
+    transform: translate(-25%, 0%);
+    opacity: .25;
+    overflow: hidden;
+
+  }
+
+}
+
 #page--main {
 
   padding-top: @padding-top*2;
@@ -69,21 +83,101 @@
 
 #home {
 
+  &--content {
+    position: fixed;
+    height: 100%;
+    top: 0;
+    background: @white;
+    z-index: 80;
+    transition: 250ms ease;
+    transform: translate(0%, 0%);
+
+    &.fs-swap-active {
+
+      transform: translate(-100%, 0%);
+
+    }
+
+    @media @min {
+      width: 85%;
+      right: -85%;
+    }
+
+    @media @tablet {
+      width: 75%;
+      right: -75%;
+    }
+
+    @media @desktop {
+      width: 50%;
+      right: -50%;
+    }
+
+  }
+
   &--recent {
 
+    padding-top: @spaced;
+    margin: @spaced*2 0;
     overflow: hidden;
+    position: relative;
+
+    .arrow {
+
+      position: absolute;
+      z-index: 99;
+      top: 50%;
+      .font_size(75);
+      @common: 80px;
+      height: @common;
+      line-height: @common;
+      width: @common;
+      margin-top: -25px;
+      text-align: center;
+
+      &-left {
+        left: 0;
+      }
+
+      &-right {
+        right: 0;
+      }
+
+      a {
+        color: @white50;
+        position: relative;
+        &:before {
+          position: relative;
+          top: .175em;
+        }
+        &:hover {
+          color: @white;
+        }
+        &:active {
+          top: 1px;
+        }
+      }
+
+    }
 
     &-slider {
 
-      height: 500px;
+      height: 360px;
       position: relative;
+      overflow: visible;
+      padding-top: 0;
 
       .rsOverflow, .rsVisibleNearbyWrap {
         overflow: visible;
       }
 
+      .rsArrow, .rsNav {
+        display: none!important;
+      }
+
       .rsSlide {
 
+        overflow: visible;
         opacity: .25;
         transition: opacity 500ms ease;
 
@@ -97,4 +191,10 @@
 
   }
 
+}
+
+.addthisevent-drop {
+  z-index: 1;
+  font-family: inherit;
+  text-decoration: none!important;
 }

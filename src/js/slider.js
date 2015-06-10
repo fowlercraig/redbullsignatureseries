@@ -1,22 +1,16 @@
 jQuery(document).ready(function($) {
-  //jQuery.rsCSS3Easing.easeOutBack = 'cubic-bezier(0.175, 0.885, 0.320, 1.275)';
+
   $('#home--recent-slider').royalSlider({
-    arrowsNav: true,
+    arrowsNav: false,
     arrowsNavAutoHide: false,
-    //fadeinLoadedSlide: false,
     controlNavigationSpacing: 0,
-    controlNavigation: 'bullets',
-    imageScaleMode: 'none',
+    controlNavigation: 'none',
     imageAlignCenter:false,
     blockLoop: true,
     loop: true,
-    //numImagesToPreload: 6,
-    //transitionType: 'fade',
+    autoHeight: true,
     keyboardNavEnabled: true,
     addActiveClass: true,
-    //block: {
-    //  delay: 400
-    //}
     visibleNearby: {
       enabled: true,
       centerArea: 0.95,
@@ -26,4 +20,17 @@ jQuery(document).ready(function($) {
       navigateByCenterClick: true
     }
   });
+
+  var slider = $('#home--recent-slider').data('royalSlider');
+
+  $('.arrow-left').on('click', function(event){
+    event.preventDefault();
+    slider.prev();
+  });
+
+  $('.arrow-right').on('click', function(event){
+    event.preventDefault();
+    slider.next();
+  });
+
 });

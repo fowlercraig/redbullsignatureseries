@@ -13,7 +13,7 @@
           <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
         </header>
         <div class="meta fs-cell fs-lg-12 fs-md-3 fs-sm-3">
-          <a class="btn btn-primary" href="#">More Info</a>
+          <a class="btn btn-primary" href="#">more event info</a>
           <a class="btn btn-primary" href="#">Schedule</a>
           <a class="btn btn-primary" href="#">Watch Now</a>
         </div>

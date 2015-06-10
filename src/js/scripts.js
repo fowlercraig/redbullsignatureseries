@@ -1,6 +1,7 @@
 // @codekit-prepend "featured.js"
 // @codekit-prepend "slider.js"
 // @codekit-append "miles.js"
+// @codekit-append "moreinfo.js"
 
 function equalized(){
 
@@ -53,5 +54,10 @@ $(function(){
     //event.preventDefault();
     //showClick();
   });
+
+  addthisevent.settings({
+    css : false,
+  });
+
 
 });
