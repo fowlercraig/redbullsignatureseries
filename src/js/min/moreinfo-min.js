@@ -1,1 +1,0 @@
-function swap(){$(".target").swap()}
