@@ -1,0 +1,312 @@
+.showlist {
+
+  padding-top: @spaced + @spaced/2;
+
+  .show {
+
+    position: relative;
+    transition: 300ms ease;
+    //opacity: .7;
+
+    @media @min {
+      margin-bottom: @spaced;
+    }
+
+    @media @desktop {
+      margin-top: -@spaced/2;
+      margin-bottom: 0;
+    }
+
+
+
+    &:hover, &.stuck {
+
+      opacity: 1;
+      z-index: 9;
+
+    }
+
+    h1 {
+
+      margin-bottom: 15px;
+
+      @media @desktop {
+        .font_size(43);
+      }
+
+      @media @max {
+        .font_size(50);
+      }
+
+      a {
+
+        color: @white;
+        display: block;
+
+        &:hover {
+
+          // color: @rb-red;
+
+        }
+
+      }
+
+    }
+
+    h4 {
+
+      color: @white50;
+      margin-bottom: 5px;
+
+    }
+
+    .desc {
+
+      text-align: left;
+
+      @media @tablet {
+        padding-top: @spaced/2;
+        margin-bottom: @spaced*2;
+      }
+
+      @media @desktop {
+        padding-top: @spaced*2;
+        margin-bottom: 0;
+      }
+
+      @media @max {
+        padding-top: @spaced*4;
+      }
+
+    }
+
+    .video {
+
+      box-shadow: 0 0 20px @black50;
+      position: relative;
+
+      @btnHeight: 80px;
+
+      .play-btn {
+
+        height: @btnHeight;
+        width: @btnHeight;
+        display: block;
+        border: 6px solid @white;
+        border-radius: 50%;
+        transition: 300ms ease;
+        text-indent: -99999px;
+        background: url('/assets/img/playbutton.png') center center no-repeat;
+        background-size: @btnHeight - 30 @btnHeight - 30;
+        z-index: 50;
+        .center();
+
+      }
+
+      @media @min {
+        margin-bottom: @spaced/2;
+      }
+
+      @media @desktop {
+        margin-bottom: 0;
+      }
+
+      &:hover {
+
+        .play-btn {
+
+          background-color: @rb-red;
+          border-color: darken(@rb-red, 5%);
+
+        }
+
+      }
+
+    }
+
+    @media @desktop {
+
+      &:nth-child(odd) {
+
+        // background: @black25;
+
+        .desc {
+
+          text-align: right;
+
+        }
+
+        .video {
+
+          float: right;
+
+        }
+
+        .meta {
+
+          text-align: right;
+
+        }
+
+      }
+
+    } // Tablet Media Query
+
+  }
+
+  .meta {
+
+    @media @mobile {
+
+      padding-top: 18px;
+      text-align: right;
+
+    }
+
+    @media @desktop {
+
+      padding-top: 0;
+      text-align: left;
+
+    }
+
+  }
+
+  &.past {
+
+    opacity: .5;
+
+    &:hover {
+
+      opacity: 1;
+
+    }
+
+  }
+
+  &.grid {
+
+    .show {
+
+      &.past {
+        //opacity: .75;
+        &:hover {
+          opacity: 1;
+        }
+        .video {
+          position: relative;
+          &:before {
+            content: 'past';
+            position: absolute;
+            background: @rb-red;
+            color: @white;
+            text-transform: uppercase;
+            padding: 0 10px;
+            height: 25px;
+            line-height: 27px;
+            .font_size(11);
+            font-weight: 900;
+            letter-spacing: 1px;
+          }
+        }
+        .desc {
+          h4 {
+            color: #333;
+          }
+        }
+      }
+
+      margin-bottom: @fs-grid-gutter*3;
+
+      @media @min {
+        margin-bottom: @fs-grid-gutter*3;
+      }
+
+      @media @tablet {
+        margin-bottom: @fs-grid-gutter*3;
+      }
+
+      @media @desktop {
+        margin-bottom: @fs-grid-gutter*3;
+      }
+
+      @media @max {
+        margin-bottom: @fs-grid-gutter*3;
+      }
+
+      .video {
+        margin-bottom: 0;
+      }
+
+      .desc {
+
+        padding-top: @spaced/1.5;
+        text-align: left;
+        margin-bottom: 0;
+
+        h1 {
+
+          margin-bottom: 0;
+
+          @media @min {
+            .font_size(32);
+          }
+
+          @media @tablet {
+            .font_size(32);
+          }
+
+          @media @desktop {
+            .font_size(32);
+          }
+
+          @media @max {
+            .font_size(32);
+          }
+
+        }
+
+        h4 {
+
+          @media @min {
+            .font_size(16);
+          }
+
+          @media @tablet {
+            .font_size(16);
+          }
+
+          @media @desktop {
+            .font_size(16);
+          }
+
+          @media @max {
+            .font_size(16);
+          }
+
+        }
+
+      }
+
+      .meta {
+
+        text-align: left;
+        padding-top: 0;
+
+        .btn {
+          color: @rb-red;
+          .font_size(13);
+          padding: 0 4px;
+          margin: 0 -1px;
+          &:hover {
+            color: @white;
+          }
+        }
+
+      }
+
+    }
+
+  }
+
+}
