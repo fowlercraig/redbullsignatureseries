@@ -5294,28 +5294,8 @@ form textarea:focus {
 .text-center {
   text-align: center;
 }
-@media screen and (min-width: 300px) {
-  .text-center {
-    text-align: left;
-  }
-}
-@media screen and (min-width: 980px) {
-  .text-center {
-    text-align: center;
-  }
-}
 .text-right {
   text-align: right;
-}
-@media screen and (min-width: 300px) {
-  .text-right {
-    text-align: left;
-  }
-}
-@media screen and (min-width: 980px) {
-  .text-right {
-    text-align: right;
-  }
 }
 .divider {
   background: #e7e7ec;
@@ -5498,6 +5478,26 @@ html {
   width: 220px;
   top: 10px;
 }
+@media screen and (min-width: 300px) {
+  #header .hide-mobile {
+    display: none;
+  }
+}
+@media screen and (min-width: 740px) {
+  #header .hide-mobile {
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 300px) {
+  #header .show-mobile {
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 740px) {
+  #header .show-mobile {
+    display: hide;
+  }
+}
 #header.banner--clone {
   position: fixed;
   top: 0;
@@ -5527,6 +5527,7 @@ html {
 #header.banner--stick #site_logo {
   visibility: visible;
   width: 160px;
+  padding: 0;
 }
 #header h1 {
   color: #ffffff;
@@ -5825,15 +5826,49 @@ html {
   padding: 12px 12px;
   margin-bottom: 0;
 }
+@media screen and (min-width: 300px) {
+  #home--above .content h2 {
+    font-size: 15px;
+    font-size: 0.9375rem;
+  }
+}
+@media screen and (min-width: 740px) {
+  #home--above .content h2 {
+    font-size: 22px;
+    font-size: 1.375rem;
+  }
+}
+@media screen and (min-width: 980px) {
+  #home--above .content h2 {
+    font-size: 24px;
+    font-size: 1.5rem;
+  }
+}
 #home--above .content h1 {
   color: #ffffff;
   text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   margin-bottom: 10px;
-  font-size: 100px;
-  font-size: 6.25rem;
 }
 #home--above .content h1 a {
   color: inherit;
+}
+@media screen and (min-width: 300px) {
+  #home--above .content h1 {
+    font-size: 50px;
+    font-size: 3.125rem;
+  }
+}
+@media screen and (min-width: 740px) {
+  #home--above .content h1 {
+    font-size: 86px;
+    font-size: 5.375rem;
+  }
+}
+@media screen and (min-width: 980px) {
+  #home--above .content h1 {
+    font-size: 100px;
+    font-size: 6.25rem;
+  }
 }
 #home--above .content .meta .btn {
   background: #9f163a;
