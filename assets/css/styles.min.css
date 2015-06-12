@@ -5503,7 +5503,7 @@ html {
   position: fixed;
   top: 0;
   left: 0;
-  padding: 10px 0px;
+  padding: 0px;
   background: rgba(0, 0, 0, 0.75);
   border-bottom: 0;
   z-index: 999;
@@ -5519,6 +5519,7 @@ html {
 }
 #header.banner--clone #site_logo {
   visibility: hidden;
+  width: 130px;
 }
 #header.banner--stick {
   -webkit-transform: translateY(0%);
@@ -5527,8 +5528,8 @@ html {
 }
 #header.banner--stick #site_logo {
   visibility: visible;
-  width: 160px;
   padding: 0;
+  width: 130px;
 }
 #header h1 {
   color: #ffffff;

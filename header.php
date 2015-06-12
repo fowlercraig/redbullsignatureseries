@@ -49,12 +49,12 @@
 
     <header id="header" class="fs-grid-fluid">
       <div class="fs-row">
-        <div class="fs-cell fs-lg-8 fs-md-6 fs-sm-3">
+        <div class="fs-cell fs-lg-6 fs-md-6 fs-sm-3">
           <a id="site_logo" href="/"><?php bloginfo( 'name' ) ?></a>
           <a class="hide-mobile">Watch All Season Long on NBC</a>
           <a class="show-mobile right">Menu</a>
         </div>
-        <div class="fs-cell fs-lg-4 fs-md-hide fs-sm-hide text-right">
+        <div class="fs-cell fs-lg-6 fs-md-hide fs-sm-hide text-right">
           <menu ><?php echo strip_tags(wp_nav_menu( $menuParameters ), '<a>' ); ?></menu>
           <a target="blank" class="social ss-social-circle ss-facebook" alt="twitter" href="https://twitter.com/home?status=<?php the_field('twitter_share', 32); ?>"></a>
           <a target="blank" class="social ss-social-circle ss-twitter"  alt="facebook"href="https://www.facebook.com/sharer/sharer.php?u=<?php the_field('facebook_share', 32); ?>"></a>
