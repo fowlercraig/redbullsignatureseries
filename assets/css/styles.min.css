@@ -5390,7 +5390,6 @@ form textarea:focus {
 body,
 html {
   background: #000;
-  overflow: visible;
 }
 .spaced.top {
   margin-top: 25px;
@@ -5623,12 +5622,14 @@ html {
   top: 0;
   background: #ffffff;
   z-index: 80;
-  overflow: visible;
   -webkit-transition: 250ms ease;
           transition: 250ms ease;
   -webkit-transform: translate(0%, 0%);
       -ms-transform: translate(0%, 0%);
           transform: translate(0%, 0%);
+  -webkit-overflow-scrolling: touch;
+  overflow-x: visible;
+  overflow-y: scroll;
 }
 #home--content-loading {
   height: 32px;
@@ -5645,13 +5646,32 @@ html {
 #home--content .mfp-close {
   position: absolute;
   top: 0;
-  left: -50px;
-  z-index: 99;
-  height: 50px;
-  width: 50px;
-  padding: 0;
-  background: #cc1c4a;
-  text-align: center;
+}
+@media screen and (min-width: 300px) {
+  #home--content-close,
+  #home--content .mfp-close {
+    left: 0;
+    z-index: 99;
+    height: 50px;
+    width: 100%;
+    padding: 0;
+    top: 0;
+    background: #cc1c4a;
+    text-align: center;
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 740px) {
+  #home--content-close,
+  #home--content .mfp-close {
+    left: -50px;
+    z-index: 99;
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    background: #cc1c4a;
+    text-align: center;
+  }
 }
 #home--content.fs-swap-active {
   -webkit-transform: translate(-100%, 0%);
@@ -5660,12 +5680,14 @@ html {
 }
 @media screen and (min-width: 300px) {
   #home--content {
-    width: 85%;
-    right: -85%;
+    width: 100%;
+    right: -100%;
+    padding-bottom: 50px;
   }
 }
 @media screen and (min-width: 740px) {
   #home--content {
+    top: 0;
     width: 75%;
     right: -75%;
   }
