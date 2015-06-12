@@ -46,7 +46,7 @@
 
 <section id="home--above" style="background-image:url(<?php echo $thumb_url; ?>);">
   <div class="fs-row">
-    <div class="fs-cell fs-lg-12 fs-md-6 fs-sm-3 fs-centered">
+    <div class="fs-cell fs-lg-11 fs-md-6 fs-sm-3 fs-centered">
       <div class="content">
         <header>
           <h4><span>Coming Up Next:</span></h4>
