@@ -80,10 +80,17 @@
       margin-bottom: 0;
 
       @media @min {
-        .font_size(14);
+        .font_size(18);
+        span {
+          display: block;
+          line-height: 1.3;
+        }
       }
       @media @tablet {
         .font_size(22);
+        span {
+          display: inline;
+        }
       }
       @media @desktop {
         .font_size(24);

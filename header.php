@@ -52,7 +52,7 @@
         <div class="fs-cell fs-lg-6 fs-md-6 fs-sm-3">
           <a id="site_logo" href="/"><?php bloginfo( 'name' ) ?></a>
           <a class="hide-mobile">Watch All Season Long on NBC</a>
-          <a class="show-mobile right">Menu</a>
+          <a class="show-mobile right btn btn-last">Menu</a>
         </div>
         <div class="fs-cell fs-lg-6 fs-md-hide fs-sm-hide text-right">
           <menu ><?php echo strip_tags(wp_nav_menu( $menuParameters ), '<a>' ); ?></menu>

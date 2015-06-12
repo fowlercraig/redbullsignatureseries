@@ -5337,6 +5337,9 @@ form textarea:focus {
 .btn.btn-first {
   padding-left: 0;
 }
+.btn.btn-last {
+  padding-right: 0!important;
+}
 .btn.btn-lg {
   font-size: 20px;
   font-size: 1.25rem;
@@ -5628,7 +5631,7 @@ html {
       -ms-transform: translate(0%, 0%);
           transform: translate(0%, 0%);
   -webkit-overflow-scrolling: touch;
-  overflow-x: visible;
+  overflow-x: hidden;
   overflow-y: scroll;
 }
 #home--content-loading {
@@ -5853,14 +5856,21 @@ html {
 }
 @media screen and (min-width: 300px) {
   #home--above .content h2 {
-    font-size: 14px;
-    font-size: 0.875rem;
+    font-size: 18px;
+    font-size: 1.125rem;
+  }
+  #home--above .content h2 span {
+    display: block;
+    line-height: 1.3;
   }
 }
 @media screen and (min-width: 740px) {
   #home--above .content h2 {
     font-size: 22px;
     font-size: 1.375rem;
+  }
+  #home--above .content h2 span {
+    display: inline;
   }
 }
 @media screen and (min-width: 980px) {
