@@ -5778,6 +5778,7 @@ html {
 #home--above .slide {
   padding-top: 85px;
   background-size: cover;
+  background-position: center center;
 }
 #home--above .slide .rsABlock {
   position: relative;
