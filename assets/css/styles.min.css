@@ -5477,6 +5477,7 @@ html {
   position: relative;
   width: 220px;
   top: 10px;
+  left: -16px;
 }
 @media screen and (min-width: 300px) {
   #header .hide-mobile {
@@ -5495,7 +5496,7 @@ html {
 }
 @media screen and (min-width: 740px) {
   #header .show-mobile {
-    display: hide;
+    display: none;
   }
 }
 #header.banner--clone {
@@ -5828,8 +5829,8 @@ html {
 }
 @media screen and (min-width: 300px) {
   #home--above .content h2 {
-    font-size: 15px;
-    font-size: 0.9375rem;
+    font-size: 14px;
+    font-size: 0.875rem;
   }
 }
 @media screen and (min-width: 740px) {
@@ -5848,14 +5849,19 @@ html {
   color: #ffffff;
   text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   margin-bottom: 10px;
+  line-height: 1;
 }
 #home--above .content h1 a {
   color: inherit;
 }
 @media screen and (min-width: 300px) {
   #home--above .content h1 {
-    font-size: 50px;
-    font-size: 3.125rem;
+    font-size: 66px;
+    font-size: 4.125rem;
+    -webkit-hyphens: none;
+       -moz-hyphens: none;
+        -ms-hyphens: none;
+            hyphens: none;
   }
 }
 @media screen and (min-width: 740px) {
@@ -5874,8 +5880,24 @@ html {
   background: #9f163a;
   border-radius: 0;
   color: #ffffff !important;
-  font-size: 16px;
-  font-size: 1rem;
+}
+@media screen and (min-width: 300px) {
+  #home--above .content .meta .btn {
+    font-size: 13px;
+    font-size: 0.8125rem;
+  }
+}
+@media screen and (min-width: 740px) {
+  #home--above .content .meta .btn {
+    font-size: 16px;
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 980px) {
+  #home--above .content .meta .btn {
+    font-size: 16px;
+    font-size: 1rem;
+  }
 }
 #home--above .content .meta .btn.addthisevent-drop {
   margin: 0!important;

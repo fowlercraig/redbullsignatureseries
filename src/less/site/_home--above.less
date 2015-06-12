@@ -79,7 +79,7 @@
       margin-bottom: 0;
 
       @media @min {
-        .font_size(15);
+        .font_size(14);
       }
       @media @tablet {
         .font_size(22);
@@ -94,13 +94,15 @@
       color: @white;
       text-shadow: 0 0 15px @black50;
       margin-bottom: 10px;
+      line-height: 1;
 
       a {
         color: inherit;
       }
 
       @media @min {
-        .font_size(50);
+        .font_size(66);
+        hyphens: none;
       }
       @media @tablet {
         .font_size(86);
@@ -116,7 +118,16 @@
         background: darken(@rb-red, 10%);
         border-radius: 0;
         color: @white!important;
-        .font_size(16);
+
+        @media @min {
+          .font_size(13);
+        }
+        @media @tablet {
+          .font_size(16);
+        }
+        @media @desktop {
+          .font_size(16);
+        }
 
         &.addthisevent-drop {
           margin: 0!important;
