@@ -1,3 +1,5 @@
+<section id="home--above" class="royalSlider rsMinW">
+
 <?php
 
   $meta_query = array(
@@ -11,7 +13,7 @@
 
   $args = array (
 
-    'posts_per_page' => 1,
+    'posts_per_page' => 3,
     'post_type'      => 'page',
     'post_parent'    => 66,
     'meta_key'       => 'next_air_date',
@@ -44,13 +46,13 @@
 
 ?>
 
-<section id="home--above" style="background-image:url(<?php echo $thumb_url; ?>);">
+<div class="slide rsContent" style="background-image:url(<?php echo $thumb_url; ?>);" data-rsDelay="7000">
   <div class="fs-row">
     <div class="fs-cell fs-lg-11 fs-md-6 fs-sm-3 fs-centered">
-      <div class="content">
-        <header>
+      <div class="content rsABlock"  data-move-effect="bottom">
+        <header class="">
           <h4><span>Coming Up Next:</span></h4>
-          <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+          <h1><a class="btn-moreinfo" href="<?php the_field('more_info_link'); ?>"><?php the_title(); ?></a></h1>
           <h2>Watch the Broadcast: <?php echo $date->format('M d, Y'); ?> @ <?php the_field('air_time'); ?></h2>
         </header>
         <div class="meta">
@@ -65,15 +67,18 @@
             <span class="location">NBC</span>
             <span class="date_format">MM/DD/YYYY</span>
           </div>
-          <a class="btn btn-link" href="#">More Event Info</a>
+          <a class="btn btn-link btn-moreinfo" href="<?php the_field('more_info_link'); ?>">More Event Info</a>
         </div>
       </div>
     </div>
   </div>
-</section>
+</div>
 
 <?php
   endwhile;
   $wp_query = null;
   $wp_query = $temp;  // Reset
 ?>
+
+
+</section>

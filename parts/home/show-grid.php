@@ -1,7 +1,11 @@
 <article <?php post_class('show ' . $date_passed . ' fs-cell fs-xl-4 fs-lg-4 fs-md-3 fs-sm-3'); ?>>
   <div class="fs-row">
     <div class="video fs-cell fs-all-full">
-      <a href="<?php the_permalink(); ?>">
+      <?php if ( $end_date_passed_check->format('Ymd') < date('Ymd') ): ?>
+      <a class="" target="blank" href="<?php the_field('red_bull_tv_link'); ?>">
+      <?php else: ?>
+      <a class="btn-moreinfo" target="blank" href="<?php the_field('more_info_link'); ?>">
+      <?php endif; ?>
         <?php
 
           if ( $end_date_passed_check->format('Ymd') < date('Ymd') ) {
@@ -36,9 +40,9 @@
           </div>
           <?php endif; ?>
           <?php if ( $end_date_passed_check->format('Ymd') < date('Ymd') ): ?>
-          <a class="btn btn-link btn-first" href="#">Watch Now on RedBull.tv</a>
+          <a class="btn btn-link btn-first" target="blank" href="<?php the_field('red_bull_tv_link'); ?>">Watch Now on RedBull.tv</a>
           <?php endif; ?>
-          <a class="btn btn-link btn-first target" data-swap-target=".toggle" href="#">more event info</a>
+          <a class="btn btn-link btn-first target btn-moreinfo" href="<?php the_field('more_info_link'); ?>">more event info</a>
         </div>
       </div>
     </div>

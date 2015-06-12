@@ -1,5 +1,6 @@
 // @codekit-prepend "featured.js"
 // @codekit-prepend "slider.js"
+// @codekit-prepend "slider_main.js"
 // @codekit-append "miles.js"
 // @codekit-append "moreinfo.js"
 

@@ -10,7 +10,7 @@
     <div class="fs-cell fs-lg-11 fs-md-5 fs-sm-3 fs-centered">
       <div class="fs-row">
         <div class="video fs-cell fs-lg-8 fs-md-6 fs-sm-3">
-          <a href="#" class="target" data-swap-target=".toggle">
+          <a href="<?php the_field('red_bull_tv_link'); ?>" class="target" data-swap-target=".toggle">
             <span class="play-btn">Play Show</span>
             <?php the_post_thumbnail( 'video-sm', array( 'class' => 'img-responsive' ) ); ?>
           </a>
@@ -19,12 +19,12 @@
           <div class="fs-row">
             <header class="fs-cell fs-lg-12 fs-md-3 fs-sm-3">
               <h4><span>Just Aired:</span> <?php echo $date->format('M d, Y'); ?></h4>
-              <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+              <h1><a class="btn-moreinfo" href="<?php the_field('more_info_link'); ?>"><?php the_title(); ?></a></h1>
             </header>
             <div class="content fs-cell fs-lg-12 fs-md-3 fs-sm-3"><?php the_content(); ?></div>
             <div class="meta fs-cell fs-lg-12 fs-md-3 fs-sm-3">
-              <a class="btn btn-primary" href="#">Watch Now on RedBull.tv</a>
-              <a class="btn btn-link btn-first" href="#">more event info</a>
+              <a class="btn btn-primary" target="blank" href="<?php the_field('red_bull_tv_link'); ?>">Watch Now on RedBull.tv</a>
+              <a class="btn btn-link btn-first btn-moreinfo" href="<?php the_field('more_info_link'); ?>">more event info</a>
             </div>
           </div>
         </div>

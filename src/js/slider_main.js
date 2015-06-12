@@ -1,27 +1,29 @@
 jQuery(document).ready(function($) {
 
-  $('#home--recent-slider').royalSlider({
-    arrowsNav: false,
+  $('#home--above').royalSlider({
+    arrowsNav: true,
     arrowsNavAutoHide: false,
+    fadeinLoadedSlide: false,
     controlNavigationSpacing: 0,
-    controlNavigation: 'none',
+    controlNavigation: 'bullets',
+    imageScaleMode: 'none',
     imageAlignCenter:false,
     blockLoop: true,
     loop: true,
-    autoHeight: true,
+    numImagesToPreload: 6,
+    transitionType: 'fade',
     keyboardNavEnabled: true,
-    addActiveClass: true,
-    visibleNearby: {
+    block: {
+      delay: 400
+    },
+    autoPlay: {
+      // autoplay options go gere
       enabled: true,
-      centerArea: 0.95,
-      center: true,
-      breakpoint: 650,
-      breakpointCenterArea: 1,
-      navigateByCenterClick: true
+      pauseOnHover: true
     }
   });
 
-  var slider = $('#home--recent-slider').data('royalSlider');
+  var slider = $('#home--above').data('royalSlider');
 
   $('#home--recent .arrow-left').on('click', function(event){
     event.preventDefault();

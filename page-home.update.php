@@ -19,11 +19,11 @@
   <section id="home--shows">
     <div class="fs-row">
       <div class="fs-cell fs-lg-11 fs-md-6 fs-sm-3 fs-centered">
-        <h3 class="section-title text-center spaced top">Coming Up Next</h3>
+        <h3 class="section-title text-center spaced top">Red Bull Signature Series 2015</h3>
         <div class="arrow down short"><hr></div>
         <div class="showlist soon grid fs-row">
-          <?php include locate_template('parts/home/upcoming-show-grid.php' ); ?>
           <?php include locate_template('parts/home/past-show-grid.php' ); ?>
+          <?php include locate_template('parts/home/upcoming-show-grid.php' ); ?>
         </div>
 
       </div>

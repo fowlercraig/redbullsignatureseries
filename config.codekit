@@ -7085,6 +7085,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/src\/js\/loadstuff.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/js\/loadstuff.js",
+		"outputAbbreviatedPath": "\/src\/js\/min\/loadstuff-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/src\/js\/main.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -7168,6 +7179,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/src\/js\/slider.js",
 		"outputAbbreviatedPath": "\/src\/js\/min\/slider-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/src\/js\/slider_main.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/js\/slider_main.js",
+		"outputAbbreviatedPath": "\/src\/js\/min\/slider_main-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -7766,7 +7788,7 @@
 	"coffeeMinifyOutput": 1,
 	"coffeeOutputStyle": 0,
 	"coffeeSyntaxCheckerStyle": 1,
-	"externalServerAddress": "http:\/\/signatureseries.dev",
+	"externalServerAddress": "http:\/\/redbullsignatureseries.dev",
 	"externalServerPreviewPathAddition": "",
 	"genericWebpageFileExtensionsString": "html, htm, shtml, shtm, xhtml, php, jsp, asp, aspx, erb, ctp",
 	"hamlAutoOutputPathEnabled": 1,

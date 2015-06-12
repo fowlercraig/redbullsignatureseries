@@ -4,8 +4,7 @@
 
   &.fs-swap-active {
 
-    transform: translate(-25%, 0%);
-    opacity: .25;
+    transform: translate(-5%, 0%);
     overflow: hidden;
 
   }
@@ -89,8 +88,31 @@
     top: 0;
     background: @white;
     z-index: 80;
+    overflow: visible;
     transition: 250ms ease;
     transform: translate(0%, 0%);
+
+    &-loading {
+      height: 32px;
+      width: 32px;
+      .center();
+      background: url('/assets/img/ajax-loader.gif');
+    }
+
+    &-close, .mfp-close {
+      position: absolute;
+      top: 0;
+      left: -50px;
+      z-index: 99;
+      height: 50px;
+      width: 50px;
+      padding: 0;
+      background: @rb-red;
+      text-align: center;
+      &:hover {
+        //background: darken(@rb-red, 10%);
+      }
+    }
 
     &.fs-swap-active {
 
