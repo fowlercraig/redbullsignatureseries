@@ -160,6 +160,11 @@
     overflow: hidden;
     position: relative;
 
+    .btn {
+      margin-right: 5px;
+      .font_size(17);
+    }
+
     .arrow {
 
       position: absolute;
@@ -184,6 +189,7 @@
       a {
         color: @white50;
         position: relative;
+
         &:before {
           position: relative;
           top: .175em;
@@ -193,6 +199,9 @@
         }
         &:active {
           top: 1px;
+        }
+        &.btn {
+          margin-bottom: 0;
         }
       }
 

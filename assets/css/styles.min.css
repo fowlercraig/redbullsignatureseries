@@ -5758,6 +5758,11 @@ html {
   overflow: hidden;
   position: relative;
 }
+#home--recent .btn {
+  margin-right: 5px;
+  font-size: 17px;
+  font-size: 1.0625rem;
+}
 #home--recent .arrow {
   position: absolute;
   z-index: 99;
@@ -5789,6 +5794,9 @@ html {
 }
 #home--recent .arrow a:active {
   top: 1px;
+}
+#home--recent .arrow a.btn {
+  margin-bottom: 0;
 }
 #home--recent-slider {
   height: 360px;
