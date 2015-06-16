@@ -48,26 +48,33 @@
 
 <div class="slide rsContent" style="background-image:url(<?php echo $thumb_url; ?>);" data-rsDelay="7000">
   <div class="fs-row">
-    <div class="fs-cell fs-lg-11 fs-md-6 fs-sm-3 fs-centered">
-      <div class="content rsABlock"  data-move-effect="bottom">
-        <header class="">
-          <h4><span>Coming Up Next:</span></h4>
-          <h1><a class="btn-moreinfo" href="<?php the_field('more_info_link'); ?>"><?php the_title(); ?></a></h1>
-          <h2>Watch the Broadcast: <?php echo $date->format('M d, Y'); ?> @ <?php the_field('air_time'); ?></h2>
-        </header>
-        <div class="meta">
-          <?php $time = get_field('air_time'); ?>
-          <div title="Add to Calendar" class="addthisevent btn btn-link" data-direct="google">
-            Add to Calendar
-            <span class="start"><?php echo $date->format('m/d/y'); ?> <?php echo str_replace("EST", "", $time); ?></span>
-            <span class="end"><?php echo $date->format('m/d/y'); ?> <?php echo str_replace("EST", "", $time); ?></span>
-            <span class="timezone">America/New_York</span>
-            <span class="title"><?php bloginfo( 'name' ) ?> on NBC | <?php the_title(); ?></span>
-            <span class="description"><?php the_content(); ?></span>
-            <span class="location">NBC</span>
-            <span class="date_format">MM/DD/YYYY</span>
+    <div class="fs-cell fs-lg-11 fs-md-6 fs-sm-3 fs-padded centered">
+      <div class='fs-row'>
+        <div class="fs-cell fs-lg-9 fs-md-6 fs-sm-3">
+          <div class="content rsABlock"  data-move-effect="bottom">
+            <header class="">
+              <h4><span>Coming Up Next:</span></h4>
+              <h1><a class="btn-moreinfo" href="<?php the_field('more_info_link'); ?>"><?php the_title(); ?></a></h1>
+              <h2>Watch the Broadcast: <?php echo $date->format('M d, Y'); ?> @ <?php the_field('air_time'); ?></h2>
+            </header>
+            <div class="meta">
+              <?php $time = get_field('air_time'); ?>
+              <div title="Add to Calendar" class="addthisevent btn btn-link" data-direct="google">
+                Add to Calendar
+                <span class="start"><?php echo $date->format('m/d/y'); ?> <?php echo str_replace("EST", "", $time); ?></span>
+                <span class="end"><?php echo $date->format('m/d/y'); ?> <?php echo str_replace("EST", "", $time); ?></span>
+                <span class="timezone">America/New_York</span>
+                <span class="title"><?php bloginfo( 'name' ) ?> on NBC | <?php the_title(); ?></span>
+                <span class="description"><?php the_content(); ?></span>
+                <span class="location">NBC</span>
+                <span class="date_format">MM/DD/YYYY</span>
+              </div>
+              <a class="btn btn-link btn-moreinfo" href="<?php the_field('more_info_link'); ?>">More Event Info</a>
+            </div>
           </div>
-          <a class="btn btn-link btn-moreinfo" href="<?php the_field('more_info_link'); ?>">More Event Info</a>
+        </div>
+        <div class="fs-cell fs-lg-3 fs-md-6 fs-sm-3">
+          <div id="ad--main"><img src="http://placehold.it/300x250" class="img-responsive"></div>
         </div>
       </div>
     </div>

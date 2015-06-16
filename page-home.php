@@ -14,15 +14,21 @@
   <section id="home--shows">
     <div class="fs-row">
       <div class="fs-cell fs-lg-11 fs-md-6 fs-sm-3 fs-centered">
-
-        <h3 class="section-title text-center spaced top">Upcoming Shows</h3>
-        <div class="showlist soon"><?php include locate_template('parts/home/upcoming-shows.php' ); ?></div>
-
-        <hr class="invisible">
-        <h3 class="section-title text-center">Past Shows</h3>
-        <div class="arrow down short"><hr></div>
-        <div class="showlist past"><?php include locate_template('parts/home/past-shows.php' ); ?></div>
-
+        <div class="fs-row">
+          <div class="fs-cell fs-lg-8 fs-md-4 fs-sm-3">
+            <h3 class="section-title text-center spaced top">Upcoming Shows</h3>
+            <div class="showlist soon"><?php include locate_template('parts/home/upcoming-shows.php' ); ?></div>
+            <hr class="invisible">
+            <h3 class="section-title text-center">Past Shows</h3>
+            <div class="arrow down short"><hr></div>
+            <div class="showlist past"><?php include locate_template('parts/home/past-shows.php' ); ?></div>
+          </div>
+          <aside class="fs-cell fs-lg-4 fs-md-2 fs-sm-3">
+            <div id="ad--main"><img src="http://placehold.it/300x250" class="img-responsive"></div>
+            <hr class="invisible">
+            <div id="home--shows-sponsors">Sponsors Go Here</div>
+          </aside>
+        </div>
       </div>
     </div>
   </section>
