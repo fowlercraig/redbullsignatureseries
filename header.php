@@ -51,8 +51,13 @@
       <div class="fs-row">
         <div class="fs-cell fs-lg-6 fs-md-6 fs-sm-3">
           <a id="site_logo" href="/"><?php bloginfo( 'name' ) ?></a>
+<<<<<<< HEAD
           <a href="http://nbc.com" target="blank" class="nbc-logo hide-mobile">Watch All Season Long on NBC</a>
           <a class="show-mobile right">Menu</a>
+=======
+          <a class="hide-mobile">Watch All Season Long on NBC</a>
+          <a class="show-mobile right btn btn-last">Menu</a>
+>>>>>>> 43808d74a37e8558197400479fcb9bc2588f7e7c
         </div>
         <div class="fs-cell fs-lg-6 fs-md-hide fs-sm-hide text-right">
           <menu ><?php echo strip_tags(wp_nav_menu( $menuParameters ), '<a>' ); ?></menu>

@@ -5337,6 +5337,9 @@ form textarea:focus {
 .btn.btn-first {
   padding-left: 0;
 }
+.btn.btn-last {
+  padding-right: 0!important;
+}
 .btn.btn-lg {
   font-size: 20px;
   font-size: 1.25rem;
@@ -5390,7 +5393,6 @@ form textarea:focus {
 body,
 html {
   background: #000;
-  overflow: visible;
 }
 .spaced.top {
   margin-top: 25px;
@@ -5503,7 +5505,7 @@ html {
   position: fixed;
   top: 0;
   left: 0;
-  padding: 10px 0px;
+  padding: 0px;
   background: rgba(0, 0, 0, 0.75);
   border-bottom: 0;
   z-index: 999;
@@ -5519,6 +5521,7 @@ html {
 }
 #header.banner--clone #site_logo {
   visibility: hidden;
+  width: 130px;
 }
 #header.banner--stick {
   -webkit-transform: translateY(0%);
@@ -5527,8 +5530,8 @@ html {
 }
 #header.banner--stick #site_logo {
   visibility: visible;
-  width: 160px;
   padding: 0;
+  width: 130px;
 }
 #header h1 {
   color: #ffffff;
@@ -5622,12 +5625,14 @@ html {
   top: 0;
   background: #ffffff;
   z-index: 80;
-  overflow: visible;
   -webkit-transition: 250ms ease;
           transition: 250ms ease;
   -webkit-transform: translate(0%, 0%);
       -ms-transform: translate(0%, 0%);
           transform: translate(0%, 0%);
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 #home--content-loading {
   height: 32px;
@@ -5644,13 +5649,32 @@ html {
 #home--content .mfp-close {
   position: absolute;
   top: 0;
-  left: -50px;
-  z-index: 99;
-  height: 50px;
-  width: 50px;
-  padding: 0;
-  background: #cc1c4a;
-  text-align: center;
+}
+@media screen and (min-width: 300px) {
+  #home--content-close,
+  #home--content .mfp-close {
+    left: 0;
+    z-index: 99;
+    height: 50px;
+    width: 100%;
+    padding: 0;
+    top: 0;
+    background: #cc1c4a;
+    text-align: center;
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 740px) {
+  #home--content-close,
+  #home--content .mfp-close {
+    left: -50px;
+    z-index: 99;
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    background: #cc1c4a;
+    text-align: center;
+  }
 }
 #home--content.fs-swap-active {
   -webkit-transform: translate(-100%, 0%);
@@ -5659,12 +5683,14 @@ html {
 }
 @media screen and (min-width: 300px) {
   #home--content {
-    width: 85%;
-    right: -85%;
+    width: 100%;
+    right: -100%;
+    padding-bottom: 50px;
   }
 }
 @media screen and (min-width: 740px) {
   #home--content {
+    top: 0;
     width: 75%;
     right: -75%;
   }
@@ -5830,14 +5856,21 @@ html {
 }
 @media screen and (min-width: 300px) {
   #home--above .content h2 {
-    font-size: 14px;
-    font-size: 0.875rem;
+    font-size: 18px;
+    font-size: 1.125rem;
+  }
+  #home--above .content h2 span {
+    display: block;
+    line-height: 1.3;
   }
 }
 @media screen and (min-width: 740px) {
   #home--above .content h2 {
     font-size: 22px;
     font-size: 1.375rem;
+  }
+  #home--above .content h2 span {
+    display: inline;
   }
 }
 @media screen and (min-width: 980px) {

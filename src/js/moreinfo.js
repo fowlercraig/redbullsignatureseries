@@ -6,7 +6,7 @@ function swap() {
      markup: '<div id="home--content" class="mfp-iframe-scaler">'+
              '<div id="home--content-close" class="mfp-close ss-icon ss-plus"></div>'+
              '<div id="home--content-loading"></div>'+
-             '<iframe style="opacity:0" class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
+             '<iframe style="opacity:0;max-width:100%" class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
              '</div>',
    },
    callbacks: {

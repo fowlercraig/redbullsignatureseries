@@ -55,7 +55,7 @@
             <header class="">
               <h4><span>Coming Up Next:</span></h4>
               <h1><a class="btn-moreinfo" href="<?php the_field('more_info_link'); ?>"><?php the_title(); ?></a></h1>
-              <h2>Watch the Broadcast: <?php echo $date->format('M d, Y'); ?> @ <?php the_field('air_time'); ?></h2>
+              <h2><span>Catch the Broadcast on NBC:</span> <?php echo $date->format('M d, Y'); ?> @ <?php the_field('air_time'); ?></h2>
             </header>
             <div class="meta">
               <?php $time = get_field('air_time'); ?>
