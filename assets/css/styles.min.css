@@ -5866,6 +5866,9 @@ html {
     height: 150px;
   }
 }
+#home--above .coverlink {
+  background-size: cover;
+}
 #home--above .content {
   padding-bottom: 50px;
 }
