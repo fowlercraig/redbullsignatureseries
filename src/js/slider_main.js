@@ -1,4 +1,4 @@
-jQuery(document).ready(function($) {
+$(window).load(function(){
 
   $('#home--above').royalSlider({
     arrowsNav: true,
@@ -13,6 +13,7 @@ jQuery(document).ready(function($) {
     numImagesToPreload: 6,
     transitionType: 'fade',
     keyboardNavEnabled: true,
+    autoHeight: true,
     block: {
       delay: 400
     },

@@ -10,9 +10,19 @@
     text-indent: -9999px;
     background-size: contain;
     position: relative;
-    width: 220px;
     top: 10px;
     left: -16px;
+    width: 220px;
+
+    @media @desktop {
+      width: 140px;
+      top: 0px;
+    }
+
+    @media @max {
+      top: 10px;
+      width: 220px;
+    }
   }
 
   .hide-mobile {
@@ -88,11 +98,22 @@
     color: @white;
     font-weight: 600;
     height: 80px;
+    .font_size(16);
     line-height: 80px;
     margin: 0 -1px;
     padding: 0 10px;
     display: inline-block;
     text-rendering: optimizeLegibility;
+
+    &.nbc-logo {
+
+      background: url('/assets/img/nbcs-stacked-logo.png');
+      background-repeat: no-repeat;
+      background-position: center right;
+      background-size:auto 70% ;
+      padding-right: 60px;
+
+    }
 
     &.social {
       .font_size(24);

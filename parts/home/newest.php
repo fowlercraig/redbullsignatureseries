@@ -46,11 +46,12 @@
 
 ?>
 
-<div class="slide rsContent" style="background-image:url(<?php echo $thumb_url; ?>);" data-rsDelay="7000">
+<div class="slide rsContent" data-rsDelay="7000">
   <div class="fs-row">
-    <div class="fs-cell fs-lg-11 fs-md-6 fs-sm-3 fs-padded centered">
+    <div class="fs-cell fs-xl-11 fs-lg-12 fs-md-6 fs-sm-3 fs-padded centered">
       <div class='fs-row'>
-        <div class="fs-cell fs-lg-9 fs-md-6 fs-sm-3">
+        <div class="slide--spacer fs-cell fs-full-all"></div>
+        <div class="fs-cell fs-lg-9 fs-md-4 fs-sm-3">
           <div class="content rsABlock"  data-move-effect="bottom">
             <header class="">
               <h4><span>Coming Up Next:</span></h4>
@@ -73,12 +74,14 @@
             </div>
           </div>
         </div>
-        <div class="fs-cell fs-lg-3 fs-md-6 fs-sm-3">
-          <div id="ad--main"><img src="http://placehold.it/300x250" class="img-responsive"></div>
+        <div class="fs-cell fs-lg-3 fs-md-2 fs-sm-hide">
+          <hr class="invisible">
+          <div id="ad--main" class="content rsABlock"  data-move-effect="bottom"><img src="http://placehold.it/300x250" class="img-responsive"></div>
         </div>
       </div>
     </div>
   </div>
+  <div class="coverlink" style="background-image:url(<?php echo $thumb_url; ?>);"></div>
 </div>
 
 <?php

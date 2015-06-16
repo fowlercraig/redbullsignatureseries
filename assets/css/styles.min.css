@@ -5008,6 +5008,13 @@ img.rounded {
   float: none!important;
   margin: auto!important;
 }
+.coverlink {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
 *:link,
 *:visited,
 *:active,
@@ -5477,9 +5484,21 @@ html {
   text-indent: -9999px;
   background-size: contain;
   position: relative;
-  width: 220px;
   top: 10px;
   left: -16px;
+  width: 220px;
+}
+@media screen and (min-width: 980px) {
+  #header #site_logo {
+    width: 140px;
+    top: 0px;
+  }
+}
+@media screen and (min-width: 1220px) {
+  #header #site_logo {
+    top: 10px;
+    width: 220px;
+  }
 }
 @media screen and (min-width: 300px) {
   #header .hide-mobile {
@@ -5544,11 +5563,21 @@ html {
   color: #ffffff;
   font-weight: 600;
   height: 80px;
+  font-size: 16px;
+  font-size: 1rem;
   line-height: 80px;
   margin: 0 -1px;
   padding: 0 10px;
   display: inline-block;
   text-rendering: optimizeLegibility;
+}
+#header a.nbc-logo,
+#header span.nbc-logo {
+  background: url('/assets/img/nbcs-stacked-logo.png');
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: auto 70% ;
+  padding-right: 60px;
 }
 #header a.social,
 #header span.social {
@@ -5771,36 +5800,6 @@ html {
   background: #000000;
   width: 100%;
 }
-@media screen and (min-width: 300px) {
-  #home--above {
-    height: 629.1875px;
-  }
-}
-@media screen and (min-width: 500px) {
-  #home--above {
-    height: 684.1875px;
-  }
-}
-@media screen and (min-width: 740px) {
-  #home--above {
-    height: 759px;
-  }
-}
-@media screen and (min-width: 980px) {
-  #home--above {
-    height: 591.5px;
-  }
-}
-@media screen and (min-width: 1220px) {
-  #home--above {
-    height: 591.5px;
-  }
-}
-@media screen and (max-height: 750px) {
-  #home--above {
-    height: 521.6px;
-  }
-}
 #home--above .slide {
   padding-top: 85px;
   background-size: cover;
@@ -5809,33 +5808,33 @@ html {
 #home--above .slide .rsABlock {
   position: relative;
 }
-#home--above .content {
-  padding-bottom: 50px;
-}
 @media screen and (min-width: 300px) {
-  #home--above .content {
-    padding-top: 200px;
+  #home--above .slide--spacer {
+    height: 200px;
   }
 }
 @media screen and (min-width: 740px) {
-  #home--above .content {
-    padding-top: 300px;
+  #home--above .slide--spacer {
+    height: 300px;
   }
 }
 @media screen and (min-width: 980px) {
-  #home--above .content {
-    padding-top: 250px;
+  #home--above .slide--spacer {
+    height: 250px;
   }
 }
 @media screen and (min-width: 1220px) {
-  #home--above .content {
-    padding-top: 220px;
+  #home--above .slide--spacer {
+    height: 220px;
   }
 }
 @media screen and (max-height: 750px) {
-  #home--above .content {
-    padding-top: 150px;
+  #home--above .slide--spacer {
+    height: 150px;
   }
+}
+#home--above .content {
+  padding-bottom: 50px;
 }
 #home--above .content header {
   margin-bottom: 0;
@@ -5906,8 +5905,8 @@ html {
 }
 @media screen and (min-width: 980px) {
   #home--above .content h1 {
-    font-size: 100px;
-    font-size: 6.25rem;
+    font-size: 92px;
+    font-size: 5.75rem;
   }
 }
 #home--above .content .meta .btn {
