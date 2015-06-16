@@ -9,10 +9,14 @@
           <div class="fs-row">
             <div class="fs-cell fs-all-full">
             <!--<div class="fs-cell fs-lg-9 fs-md-4 fs-sm-3">-->
-            <?php include locate_template('parts/past/season-2015.php'); ?>
-            <?php include locate_template('parts/past/season-2014.php'); ?>
-            <?php include locate_template('parts/past/season-2013.php'); ?>
-            <?php include locate_template('parts/past/season-2012.php'); ?>
+            <div class="fs-row">
+              <div class="fs-cell fs-full-all">2014</div>
+              <?php include locate_template('parts/past/season-2014.php'); ?>
+              <div class="fs-cell fs-full-all">2013</div>
+              <?php include locate_template('parts/past/season-2013.php'); ?>
+              <div class="fs-cell fs-full-all">2012</div>
+              <?php include locate_template('parts/past/season-2012.php'); ?>
+            </div>
             </div>
             <!--
             <aside class="fs-cell fs-lg-3 fs-md-2 fs-sm-3">
