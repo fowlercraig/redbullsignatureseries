@@ -1,3 +1,7 @@
 ssh wearegiants.net@s147445.gridserver.com
 
 cd domains/redbullsignatureseries.com/html/wp-content/themes/redbullsignatureseries
+
+rsync -avz wearegiants.net@s147445.gridserver.com:/nfs/c08/h03/mnt/147445/domains/redbullsignatureseries.com/html/wp-content/themes/redbullsignatureseries /home/www/redbullsignatureseries.com/web/public
+
+sftp://104.130.146.130//home/www/redbullsignatureseries.com/web/public

@@ -33,6 +33,8 @@
 
     return this.each(function(){
       var selectors = [
+
+        "iframe.things",
         "iframe[src*='player.vimeo.com']",
         "iframe[src*='youtube.com']",
         "iframe[src*='youtube-nocookie.com']",

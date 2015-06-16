@@ -75,7 +75,6 @@
           </div>
         </div>
         <div class="fs-cell fs-lg-3 fs-md-2 fs-sm-hide">
-          <hr class="invisible">
           <div id="ad--main" class="content rsABlock"  data-move-effect="bottom"><img src="http://placehold.it/300x250" class="img-responsive"></div>
         </div>
       </div>

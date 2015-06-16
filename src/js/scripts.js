@@ -2,7 +2,8 @@
 // @codekit-prepend "slider.js"
 // @codekit-prepend "slider_main.js"
 // @codekit-append "miles.js"
-// @codekit-append "moreinfo.js"
+// @codekit-prepend "moreinfo.js"
+// @codekit-prepend "videos.js"
 
 function equalized(){
 

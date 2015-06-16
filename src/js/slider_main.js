@@ -1,4 +1,4 @@
-$(window).load(function(){
+$(document).ready(function(){
 
   $('#home--above').royalSlider({
     arrowsNav: true,

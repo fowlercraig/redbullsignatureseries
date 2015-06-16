@@ -26,6 +26,7 @@
   $wp_query = null;
   $wp_query = new WP_Query();
   $wp_query->query($args);
+  $counter = 1;
 
   while ($wp_query->have_posts()) : $wp_query->the_post();
 
@@ -43,6 +44,7 @@
 <?php include locate_template('/parts/home/show-posts-recent.php' ); ?>
 
 <?php
+  $counter++;
   endwhile;
   $wp_query = null;
   $wp_query = $temp;  // Reset
