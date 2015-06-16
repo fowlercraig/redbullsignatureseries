@@ -6112,7 +6112,7 @@ html {
   position: relative;
 }
 .showlist.grid .show.past .video:before {
-  content: 'past';
+  content: 'aired';
   position: absolute;
   background: #cc1c4a;
   color: #ffffff;

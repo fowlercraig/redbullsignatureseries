@@ -22,7 +22,7 @@
     <div class="desc fs-cell fs-all-full">
       <div class="fs-row">
         <header class="fs-cell fs-all-full">
-          <h4><?php echo $date->format('M d, Y'); ?> @ <?php the_field('air_time'); ?></h4>
+          <h4><?php echo $date->format('M d, Y'); ?> @ <?php the_field('air_time'); ?>  on NBC</h4>
           <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
         </header>
         <div class="meta fs-cell fs-all-full">
@@ -42,7 +42,7 @@
           <?php if ( $end_date_passed_check->format('Ymd') < date('Ymd') ): ?>
           <a class="btn btn-link btn-first" target="blank" href="<?php the_field('red_bull_tv_link'); ?>">Watch Now on RedBull.tv</a>
           <?php endif; ?>
-          <a class="btn btn-link btn-first target btn-moreinfo" href="<?php the_field('more_info_link'); ?>">more event info</a>
+          <a class="btn btn-link btn-first target btn-moreinfo" href="<?php the_field('more_info_link'); ?>">More Event Info</a>
         </div>
       </div>
     </div>
