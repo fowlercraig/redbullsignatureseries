@@ -4,6 +4,7 @@
 // @codekit-append "miles.js"
 // @codekit-prepend "moreinfo.js"
 // @codekit-prepend "videos.js"
+// @codekit-prepend "_smoothscroll.js"
 
 function equalized(){
 
