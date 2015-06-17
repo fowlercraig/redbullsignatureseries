@@ -7,9 +7,9 @@
 
 function equalized(){
 
-  $("#page--related-feed").equalize({
-    target: "article"
-  });
+  // $("#page--related-feed").equalize({
+  //   target: "article"
+  // });
 
 }
 
@@ -45,12 +45,16 @@ function headerjunk(){
 $(function(){
 
   $(".content").fitVids();
+  $(".tab").tabs({
+    mobileMaxWidth: '300px'
+  });
 
   setTimeout(function(){
     $('.overlay').removeClass('active');
   },500);
 
   headerjunk();
+  
 
   $(".show").click(function(event){
     //event.preventDefault();

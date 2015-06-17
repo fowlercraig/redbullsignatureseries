@@ -134,3 +134,49 @@
   }
 
 }
+
+#tab {
+
+  &-tabs {
+
+    text-align: center;
+
+    .fs-tabs {
+
+      &-tab{
+
+        color:       @white; 
+        height:      80px;
+        line-height: 80px;
+        padding:     0 4px;
+        display:     inline-block;
+        transition:  300ms ease;
+        
+        h4 {
+          display: inline-block;
+          color: @white25;
+        } 
+
+        &:hover {
+
+          h4 {
+
+            color: @white;
+
+          }
+
+        }
+
+      }
+
+      &-active {
+        h4 {
+          color: @white;
+        }
+      }
+
+    }
+
+  }
+
+}

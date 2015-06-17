@@ -2017,6 +2017,114 @@
 	 * @type element
 	 * @description Target Element
 	 */
+/**
+	 * @class
+	 * @name .fs-tabs-element
+	 * @type element
+	 * @description Target elmement
+	 */
+/**
+	 * @class
+	 * @name .fs-tabs
+	 * @type element
+	 * @description Base widget class
+	 */
+/**
+	 * @class
+	 * @name .fs-tabs.fs-tabs-enabled
+	 * @type modifier
+	 * @description Indicates enabled state
+	 */
+.fs-tabs {
+  /**
+		 * @class
+		 * @name .fs-tabs-tab
+		 * @type element
+		 * @description Tab handle element
+		 */
+  /**
+		 * @class
+		 * @name .fs-tabs-tab.fs-tabs-enabled
+		 * @type modifier
+		 * @description Indicates enabled state
+		 */
+  /**
+		 * @class
+		 * @name .fs-tabs-tab.fs-tabs-active
+		 * @type modifier
+		 * @description Indicates active state
+		 */
+  /**
+		 * @class
+		 * @name .fs-tabs-tab.fs-tabs-mobile
+		 * @type modifier
+		 * @description Indicates mobile interface
+		 */
+  /**
+		 * @class
+		 * @name .fs-tabs-content
+		 * @type element
+		 * @description Tab content element
+		 */
+  /**
+		 * @class
+		 * @name .fs-tabs-content.fs-tabs-enabled
+		 * @type modifier
+		 * @description Indicates enabled state
+		 */
+  /**
+		 * @class
+		 * @name .fs-tabs-content.fs-tabs-active
+		 * @type modifier
+		 * @description Indicates active state
+		 */
+  /**
+		 * @class
+		 * @name .fs-tabs-tab_mobile
+		 * @type element
+		 * @description Mobile tab handle element
+		 */
+  /**
+		 * @class
+		 * @name .fs-tabs-tab_mobile.fs-tabs-active
+		 * @type modifier
+		 * @description Indicates active state
+		 */
+}
+.fs-tabs.fs-tabs-enabled:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+.fs-tabs-tab.fs-tabs-enabled {
+  box-sizing: border-box;
+  border: none;
+  cursor: pointer;
+}
+.fs-tabs-tab.fs-tabs-enabled:focus {
+  outline: none;
+}
+.fs-tabs-content.fs-tabs-enabled {
+  box-sizing: border-box;
+  display: none;
+}
+.fs-tabs-content.fs-tabs-enabled:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+.fs-tabs-content.fs-tabs-active {
+  display: block;
+}
+.fs-tabs-tab.fs-tabs-mobile,
+.fs-tabs-tab_mobile,
+.fs-tabs-tab_mobile.fs-tabs-active {
+  display: none;
+}
+.fs-tabs-tab_mobile.fs-tabs-mobile,
+.fs-tabs-tab_mobile.fs-tabs-mobile.fs-tabs-active {
+  display: block;
+}
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -5037,6 +5145,16 @@ img.rounded {
   top: 0;
   width: 100%;
 }
+@media screen and (min-width: 300px) {
+  .show-min {
+    display: none;
+  }
+}
+@media screen and (min-width: 500px) {
+  .show-min {
+    display: inline-block;
+  }
+}
 *:link,
 *:visited,
 *:active,
@@ -5619,6 +5737,28 @@ html {
 #header span:visited {
   color: #ffffff;
 }
+#tab-tabs {
+  text-align: center;
+}
+#tab-tabs .fs-tabs-tab {
+  color: #ffffff;
+  height: 80px;
+  line-height: 80px;
+  padding: 0 4px;
+  display: inline-block;
+  -webkit-transition: 300ms ease;
+          transition: 300ms ease;
+}
+#tab-tabs .fs-tabs-tab h4 {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.25);
+}
+#tab-tabs .fs-tabs-tab:hover h4 {
+  color: #ffffff;
+}
+#tab-tabs .fs-tabs-active h4 {
+  color: #ffffff;
+}
 #wrapper {
   -webkit-transition: 300ms ease;
           transition: 300ms ease;
@@ -6104,6 +6244,36 @@ html {
 }
 .showlist.past:hover {
   opacity: 1;
+}
+.showlist.tabbed.grid .show {
+  margin-top: 0;
+}
+.showlist.tabbed.grid .show--counter {
+  display: inline-block;
+  height: 34px;
+  width: 34px;
+  line-height: 34px;
+  background: #cc1c4a;
+  color: #ffffff;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 8px;
+  right: 0;
+}
+.showlist.tabbed.grid .show .desc {
+  padding-top: 0;
+}
+.showlist.tabbed.grid .show h3 {
+  display: inline-block;
+  height: 34px;
+  line-height: 34px;
+  font-size: 16px;
+  font-size: 1rem;
+}
+.showlist.tabbed.grid .show h3 a {
+  color: #ffffff;
 }
 .showlist.grid .show {
   margin-bottom: 3.125%;
