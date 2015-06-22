@@ -48,7 +48,7 @@
     </noscript>
 
     <header id="header" class="fs-grid-fluid">
-      <div class="fs-row">
+      <div id="header-content" class="fs-row">
         <div class="fs-cell fs-lg-6 fs-md-6 fs-sm-3">
           <a id="site_logo" href="/"><?php bloginfo( 'name' ) ?></a>
           <a href="http://www.nbcsports.com/" target="blank" class="nbc-logo hide-mobile">Watch All Season Long on</a>
@@ -61,3 +61,4 @@
         </div>
       </div>
     </header>
+    <div id="header-overlay"></div>

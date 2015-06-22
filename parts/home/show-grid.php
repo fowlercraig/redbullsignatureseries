@@ -1,4 +1,4 @@
-<article <?php post_class('show ' . $date_passed . ' fs-cell fs-xl-4 fs-lg-6 fs-md-3 fs-sm-3'); ?>>
+<article <?php post_class('show ' . $date_passed . ' fs-cell fs-xl-6 fs-lg-6 fs-md-3 fs-sm-3'); ?>>
   <div class="fs-row">
     <div class="video fs-cell fs-all-full">
       <?php if ( $end_date_passed_check->format('Ymd') < date('Ymd') ): ?>
@@ -23,7 +23,7 @@
       <div class="fs-row">
         <header class="fs-cell fs-all-full">
           <h4><?php echo $date->format('M d, Y'); ?> @ <?php the_field('air_time'); ?>  on NBC</h4>
-          <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+          <h1><a class="btn-moreinfo" target="blank" href="<?php the_field('more_info_link'); ?>"><?php the_title(); ?></a></h1>
         </header>
         <div class="meta fs-cell fs-all-full">
           <?php if ( $end_date_passed_check->format('Ymd') > date('Ymd') ): ?>

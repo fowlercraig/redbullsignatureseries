@@ -13,7 +13,7 @@
 
   $args = array (
 
-    'posts_per_page' => 3,
+    'posts_per_page' => 1,
     'post_type'      => 'page',
     'post_parent'    => 66,
     'meta_key'       => 'next_air_date',
@@ -28,6 +28,8 @@
   $wp_query = null;
   $wp_query = new WP_Query();
   $wp_query->query($args);
+
+  $counter = 1;
 
   while ($wp_query->have_posts()) : $wp_query->the_post();
 
@@ -51,10 +53,14 @@
     <div class="fs-cell fs-xl-11 fs-lg-12 fs-md-6 fs-sm-3 fs-padded centered">
       <div class='fs-row'>
         <div class="slide--spacer fs-cell fs-full-all"></div>
-        <div class="fs-cell fs-lg-9 fs-md-4 fs-sm-3">
+        <div class="fs-cell fs-lg-12 fs-md-6 fs-sm-3">
           <div class="content rsABlock"  data-move-effect="bottom">
             <header class="">
+              <?php if ($counter == 1): ?>
               <h4><span>Coming Up Next:</span></h4>
+              <?php else: ?>
+              <h4><span>Coming Up Soon:</span></h4>
+              <?php endif; ?>
               <h1><a class="btn-moreinfo" href="<?php the_field('more_info_link'); ?>"><?php the_title(); ?></a></h1>
               <h2><span>Catch the Broadcast on NBC:</span> <?php echo $date->format('M d, Y'); ?> @ <?php the_field('air_time'); ?></h2>
             </header>
@@ -74,9 +80,6 @@
             </div>
           </div>
         </div>
-        <div class="fs-cell fs-lg-3 fs-md-2 fs-sm-hide">
-          <div id="ad--main" class="content rsABlock"  data-move-effect="bottom"><img src="http://placehold.it/300x250" class="img-responsive"></div>
-        </div>
       </div>
     </div>
   </div>
@@ -84,6 +87,7 @@
 </div>
 
 <?php
+  $counter++;
   endwhile;
   $wp_query = null;
   $wp_query = $temp;  // Reset

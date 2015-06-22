@@ -24,7 +24,7 @@
             <div class="content fs-cell fs-lg-12 fs-md-3 fs-sm-3"><?php the_content(); ?></div>
             <div class="meta fs-cell fs-lg-12 fs-md-3 fs-sm-3">
               <a class="btn btn-primary popup-video" href="#recent-<?php echo $counter; ?>">Watch Now</a>
-              <a class="btn btn-link btn-first" target="blank" href="<?php the_field('red_bull_tv_link'); ?>">Watch on RedBull.tv</a>
+              <!--<a class="btn btn-link btn-first" target="blank" href="<?php the_field('red_bull_tv_link'); ?>">Watch on RedBull.tv</a>-->
               <a class="btn btn-link btn-first btn-moreinfo" href="<?php the_field('more_info_link'); ?>">More Event Info</a>
             </div>
           </div>

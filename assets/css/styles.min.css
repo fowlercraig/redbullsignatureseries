@@ -5613,11 +5613,25 @@ html {
     -webkit-transform: scale(1);
   }
 }
+#RedBullWidgets--GlobalNav-Wrapper {
+  position: relative;
+  z-index: 999;
+}
 #header {
   position: absolute;
   z-index: 99;
   width: 100%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+#header-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 300px;
+  background: url('/assets/img/header-bg.png') center top;
+  background-size: cover;
+  z-index: 1;
 }
 #header #site_logo {
   background: url('/assets/img/logo.png') center left no-repeat;
@@ -6127,7 +6141,6 @@ html {
 }
 @media screen and (min-width: 980px) {
   .showlist .show {
-    margin-top: -12.5px;
     margin-bottom: 0;
   }
 }
