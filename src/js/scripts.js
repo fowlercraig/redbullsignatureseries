@@ -6,11 +6,29 @@
 // @codekit-prepend "videos.js"
 // @codekit-prepend "_smoothscroll.js"
 
+function sidebarSizing(){
+  $(window).resize(function(){
+    var sw = $('#home--shows aside').width();
+    $('#sidebar-sticky').css({
+      width: sw,
+    });
+  });
+
+}
+
 function equalized(){
 
-  // $("#page--related-feed").equalize({
-  //   target: "article"
-  // });
+  $("#home--shows").equalize({
+    target: ".sizer-item"
+  });
+
+  var sticky = new Waypoint.Sticky({
+    element: $('#sidebar-sticky')[0],
+    offset: 80,
+  });
+
+  sidebarSizing();
+  $(window).resize();
 
 }
 
@@ -56,6 +74,10 @@ $(function(){
 
   headerjunk();
   
+
+  $("#home--shows").imagesLoaded( function() {
+    equalized();
+  });
 
   $(".show").click(function(event){
     //event.preventDefault();

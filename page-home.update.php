@@ -27,14 +27,16 @@
           <div class="fs-row">
             <div class="fs-cell fs-all-full">
               <div class="fs-row">
-                <div class="fs-cell fs-lg-9 fs-md-4 fs-sm-3">
+                <div class="fs-cell fs-lg-9 fs-md-4 fs-sm-3 sizer-item">
                   <?php include locate_template('parts/home/past-show-grid.php' ); ?>
                   <?php include locate_template('parts/home/upcoming-show-grid.php' ); ?>
                 </div>
-                <aside class="fs-cell fs-lg-3 fs-md-2 fs-sm-3">
-                  <div id="ad--main"><img src="http://placehold.it/300x250" class="img-responsive"></div>
-                  <hr class="invisible">
-                  <div id="home--shows-sponsors">Sponsors Go Here</div>
+                <aside class="fs-cell fs-lg-3 fs-md-2 fs-sm-3 sizer-item">
+                  <div id="sidebar-sticky">
+                    <div id="ad--main"><img src="http://placehold.it/300x250" class="img-responsive"></div>
+                    <hr class="invisible">
+                    <div id="home--shows-sponsors">Sponsors Go Here</div>
+                  </div>
                 </aside>
               </div>
             </div>

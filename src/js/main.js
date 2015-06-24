@@ -22,3 +22,4 @@
 // @codekit-prepend "../bower_components/waypoints/lib/shortcuts/inview.js"
 // @codekit-prepend "../bower_components/FitVids/jquery.fitvids.js"
 // @codekit-prepend "../bower_components/royalslider/jquery.royalslider.min.js"
+// @codekit-prepend "../bower_components/imagesloaded/imagesloaded.pkgd.js"

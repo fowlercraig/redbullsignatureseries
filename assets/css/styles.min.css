@@ -5789,6 +5789,10 @@ html {
           transform: translate(-5%, 0%);
   overflow: hidden;
 }
+#sidebar-sticky.stuck {
+  position: fixed;
+  top: 80px;
+}
 #page--main {
   padding-top: 170px;
 }
