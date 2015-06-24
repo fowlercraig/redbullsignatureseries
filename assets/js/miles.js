@@ -14,6 +14,9 @@ jQuery(document).ready(function() {
 		        	$("#page--related-feed").html(response).transition({
 		        		opacity:1
 		        	});
+		        	$("#page--related").equalize({
+		    			target: ".feed-item"
+		    		});
 		        },400);
 		    }
 		);

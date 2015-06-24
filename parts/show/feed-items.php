@@ -9,10 +9,8 @@
 ?>
 
 <article class="feed-item fs-cell fs-xl-4 fs-lg-6 fs-md-3 fs-sm-3">
-  <div class="thumbnail">
-    <a href="<?php echo $url; ?>" rel="external">
-      <img src="<?php echo $featuredimage; ?>" class="img-responsive">
-    </a>
+  <div class="thumbnail" style="background-image:url(<?php echo $featuredimage; ?>);?>">
+    <a href="<?php echo $url; ?>" rel="external"></a>
   </div>
   <header class="meta">
     <h5><?php echo $publisheddate; ?></h5>

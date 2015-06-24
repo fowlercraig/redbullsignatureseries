@@ -1,6 +1,10 @@
 #wrapper {
 
   transition: 300ms ease;
+  background-image: url('/assets/img/sig-series-bg-3.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
 
   &.fs-swap-active {
 
@@ -15,6 +19,13 @@
 
   padding-top: @padding-top*2;
 
+  &.show {
+    padding-top: @padding-top*4;
+    padding-bottom: @spaced*2;
+    background-size: cover;
+    background-position: center center;    
+  }
+
   header {
 
     h1 {
@@ -22,6 +33,7 @@
       color: @white;
       text-transform: uppercase;
       text-shadow: 0 0 5px @black25;
+      margin-bottom: 0;
 
       @media @desktop {
         .font_size(72);
@@ -32,7 +44,6 @@
   }
 
 }
-
 
 #page--related {
 
@@ -49,6 +60,16 @@
 
     .thumbnail {
       margin-bottom: @spaced/2;
+      background-size: cover;
+      background-position: center center;
+      a {
+        display: block;
+        background-color: transparent;
+        height: 220px;
+      }
+      img {
+        visibility: hidden;
+      }
     }
 
     header {
@@ -153,10 +174,25 @@
 
   }
 
+  &--bg {
+    background-image: url('/assets/img/sig-series-bg.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding: @spaced*2 0 0;
+    background-size: contain;
+  }
+
+  &--shows {
+    background-image: url('/assets/img/sig-series-bg-2.jpg');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    padding: 0 0 @spaced*5;
+    background-size: contain;
+  }
+
   &--recent {
 
     padding-top: @spaced;
-    margin: @spaced*2 0;
     overflow: hidden;
     position: relative;
 
@@ -251,3 +287,4 @@
     padding: 0!important;
   }
 }
+

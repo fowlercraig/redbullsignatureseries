@@ -32,12 +32,11 @@
       </div>
     </div>
   </div>
+  <div id="recent-<?php echo $counter; ?>" class="video-popup mfp-hide">
+    <div class="content">
+      <video preload="metadata" controls="true" class="things" height="720" width="1280">
+          <source src="<?php the_field('video_upload'); ?>" type="video/mp4">
+      </video>
+    </div>
+  </div> <!-- /#video-01 -->
 </div>
-
-<div id="recent-<?php echo $counter; ?>" class="video-popup mfp-hide">
-  <div class="content">
-    <video preload="metadata" controls="true" class="things" height="720" width="1280">
-        <source src="<?php the_field('video_upload'); ?>" type="video/mp4">
-    </video>
-  </div>
-</div> <!-- /#video-01 -->

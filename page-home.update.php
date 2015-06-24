@@ -4,6 +4,8 @@
 
   <?php include locate_template('parts/home/newest.php' ); ?>
 
+  <div id="home--bg">
+
   <section id="home--recent">
     <div class="fs-row">
       <div class="fs-cell fs-lg-11 fs-md-6 fs-sm-3 fs-padded centered">
@@ -41,6 +43,8 @@
       </div>
     </div>
   </section>
+
+  </div>
 
 </div>
 

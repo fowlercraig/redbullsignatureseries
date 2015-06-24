@@ -17,9 +17,11 @@ jQuery(document).ready(function() {
 							opacity:1
 						});
 
-            equalized();
+						$("#page--related").equalize({
+	    					target: ".feed-item"
+	    				});
 
-					},400);
+					},1000);
 
 
 

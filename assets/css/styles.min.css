@@ -5539,7 +5539,7 @@ form textarea:focus {
 }
 body,
 html {
-  background: #000;
+  background-color: #000;
 }
 .spaced.top {
   margin-top: 25px;
@@ -5632,6 +5632,8 @@ html {
   background: url('/assets/img/header-bg.png') center top;
   background-size: cover;
   z-index: 1;
+  opacity: .75;
+  pointer-events: none;
 }
 #header #site_logo {
   background: url('/assets/img/logo.png') center left no-repeat;
@@ -5776,6 +5778,10 @@ html {
 #wrapper {
   -webkit-transition: 300ms ease;
           transition: 300ms ease;
+  background-image: url('/assets/img/sig-series-bg-3.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
 }
 #wrapper.fs-swap-active {
   -webkit-transform: translate(-5%, 0%);
@@ -5786,10 +5792,17 @@ html {
 #page--main {
   padding-top: 170px;
 }
+#page--main.show {
+  padding-top: 340px;
+  padding-bottom: 50px;
+  background-size: cover;
+  background-position: center center;
+}
 #page--main header h1 {
   color: #ffffff;
   text-transform: uppercase;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  margin-bottom: 0;
 }
 @media screen and (min-width: 980px) {
   #page--main header h1 {
@@ -5807,6 +5820,16 @@ html {
 }
 #page--related article .thumbnail {
   margin-bottom: 12.5px;
+  background-size: cover;
+  background-position: center center;
+}
+#page--related article .thumbnail a {
+  display: block;
+  background-color: transparent;
+  height: 220px;
+}
+#page--related article .thumbnail img {
+  visibility: hidden;
 }
 #page--related article header h3,
 #page--related article header h4,
@@ -5906,9 +5929,22 @@ html {
     right: -50%;
   }
 }
+#home--bg {
+  background-image: url('/assets/img/sig-series-bg.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding: 50px 0 0;
+  background-size: contain;
+}
+#home--shows {
+  background-image: url('/assets/img/sig-series-bg-2.jpg');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  padding: 0 0 125px;
+  background-size: contain;
+}
 #home--recent {
   padding-top: 25px;
-  margin: 50px 0;
   overflow: hidden;
   position: relative;
 }
@@ -6473,4 +6509,35 @@ html {
 }
 .schedule-list.past:hover {
   opacity: 1;
+}
+#show #page--main header h1 {
+  color: #ffffff;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+  line-height: 1;
+}
+#show #page--main header h1 a {
+  color: inherit;
+}
+@media screen and (min-width: 300px) {
+  #show #page--main header h1 {
+    font-size: 66px;
+    font-size: 4.125rem;
+    -webkit-hyphens: none;
+       -moz-hyphens: none;
+        -ms-hyphens: none;
+            hyphens: none;
+  }
+}
+@media screen and (min-width: 740px) {
+  #show #page--main header h1 {
+    font-size: 86px;
+    font-size: 5.375rem;
+  }
+}
+@media screen and (min-width: 980px) {
+  #show #page--main header h1 {
+    font-size: 92px;
+    font-size: 5.75rem;
+  }
 }

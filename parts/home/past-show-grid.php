@@ -15,7 +15,7 @@
     'post_type'      => 'page',
     'post_parent'    => 66,
     'meta_key'       => 'next_air_date',
-    'order'          => 'DESC',
+    'order'          => 'ASC',
     'orderby'        => 'meta_value_num',
     'paged'          => $paged,
     'meta_query'     => $meta_query

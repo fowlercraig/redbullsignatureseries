@@ -45,7 +45,7 @@ function headerjunk(){
 
 $(function(){
 
-  $(".content").fitVids();
+  $(".content, #page--video").fitVids();
   $(".tab").tabs({
     mobileMaxWidth: '300px'
   });
