@@ -9,6 +9,8 @@
         </div>
         <h6>Loading Articles</h6>
       </div>
+      <h3 class="section-title text-center spaced top">Related Articles</h3>
+      <hr class="invisible">
       <div id="page--related-feed" class="fs-row">
         <?php //$articleWidth = 'fs-cell fs-xl-4 fs-lg-6 fs-md-3 fs-sm-3'; ?>
         <?php //include locate_template('parts/show/feed-items.php' ); ?>

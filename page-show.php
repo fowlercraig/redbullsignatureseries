@@ -14,13 +14,18 @@
       <div class="fs-row">
         <header class="fs-cell fs-lg-8 fs-md-4 fs-sm-3">
           <h1><?php the_title(); ?></h1>
+          <div class="buttons">
+            <span class="btn">Share This:</span>
+            <a target="blank" class="social ss-social-circle ss-facebook" alt="twitter" href="https://twitter.com/home?status=<?php the_field('twitter_share', 32); ?>"></a>
+            <a target="blank" class="social ss-social-circle ss-twitter"  alt="facebook"href="https://www.facebook.com/sharer/sharer.php?u=<?php the_field('facebook_share', 32); ?>"></a>
+          </div>
         </header>
       </div>
     </div>
   </div>
 </section>
 
-<hr class="invisible">
+<div id="show-bg">
 
 <section id="home--recent">
   <div class="fs-row">
@@ -45,6 +50,8 @@
 
 <?php include locate_template('parts/show/related-items.php' ); ?>
 <?php include locate_template('parts/miles.php' ); ?>
+
+</div><!-- Show BG -->
 
 </div>
 

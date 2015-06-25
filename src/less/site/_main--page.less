@@ -1,4 +1,4 @@
-#wrapper {
+#wrapper, #show-bg {
 
   transition: 300ms ease;
   background-image: url('/assets/img/sig-series-bg-3.jpg');
@@ -118,15 +118,58 @@
     z-index: 80;
     transition: 250ms ease;
     transform: translate(0%, 0%);
+    overflow: visible;
     -webkit-overflow-scrolling: touch;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    //overflow-x: hidden;
+    //overflow-y: scroll;
 
     &-loading {
       height: 32px;
       width: 32px;
       .center();
       background: url('/assets/img/ajax-loader.gif');
+    }
+
+    &-newwindow {
+      position: absolute;
+      line-height: 50px;
+      color: @white;
+      cursor: pointer;
+
+      &:hover {
+        background: darken(@rb-red, 5%)
+      }
+
+      &:before {
+        position: relative;
+        top: .125em;
+      }
+
+      @media @min {
+        left: 0;
+        z-index: 99;
+        height: 50px;
+        width: 100%;
+        padding: 0;
+        top: 0;
+        background: @rb-red;
+        text-align: center;
+        opacity: 1
+      }
+
+      @media @tablet {
+        left: -50px;
+        z-index: 99;
+        height: 50px;
+        width: 50px;
+        padding: 0;
+        background: @rb-red;
+        text-align: center;
+      }
+
+      @media @desktop {
+        top: 51px;
+      }
     }
 
     &-close, .mfp-close {
