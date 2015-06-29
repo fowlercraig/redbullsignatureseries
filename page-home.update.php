@@ -33,9 +33,24 @@
                 </div>
                 <aside class="fs-cell fs-lg-3 fs-md-2 fs-sm-3 sizer-item">
                   <div id="sidebar-sticky">
-                    <div id="ad--main"><img src="http://placehold.it/300x250" class="img-responsive"></div>
+                    <div id="ad--main">
+                      <div id="div-gpt-ad-1435245873844-0"></div>
+                      <script type='text/javascript'>
+                        googletag.cmd.push(function() {
+                          googletag.defineSlot('/29829229/rbsigseries', [300, 250], 'div-gpt-ad-1435245873844-0').addService(googletag.pubads());
+                          googletag.pubads().enableSingleRequest();
+                          googletag.pubads().enableVideoAds();
+                          googletag.enableServices();
+                        });
+                      </script>
+                    </div>
                     <hr class="invisible">
-                    <div id="home--shows-sponsors">Sponsors Go Here</div>
+                    <div id="home--shows-sponsors">
+                      <a href="http://gopro.com/" target="_blank"><img src="/assets/img/gopro.png"   class="img-responsive" alt="GoPro" /></a>
+                      <a href="http://synthetics.pennzoil.com/" target="_blank"><img src="/assets/img/pennzoil.png" class="img-responsive" alt="Pennzoil Synthetics" /></a>
+                      <a href="http://www.samsung.com/us/showcase/milk-video/" target="_blank"><img src="/assets/img/samsung.png" class="img-responsive" alt="Samsung Milk Video" /></a>
+                      <a href="http://www.polaris.com/en-us/rzr-side-by-side" target="_blank"><img src="/assets/img/polaris.png" class="img-responsive" alt="Polaris RZR" /></a>
+                    </div>
                   </div>
                 </aside>
               </div>

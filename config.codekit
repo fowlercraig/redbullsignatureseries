@@ -93,6 +93,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/gopro.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 12426,
+		"inputAbbreviatedPath": "\/assets\/img\/gopro.png",
+		"outputAbbreviatedPath": "\/assets\/img\/gopro.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/grab.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -148,6 +159,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/pennzoil.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 73770,
+		"inputAbbreviatedPath": "\/assets\/img\/pennzoil.png",
+		"outputAbbreviatedPath": "\/assets\/img\/pennzoil.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/playbutton.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -159,6 +181,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/polaris.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 19176,
+		"inputAbbreviatedPath": "\/assets\/img\/polaris.png",
+		"outputAbbreviatedPath": "\/assets\/img\/polaris.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/rs-minimal-white.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -166,6 +199,17 @@
 		"initialSize": 5458,
 		"inputAbbreviatedPath": "\/assets\/img\/rs-minimal-white.png",
 		"outputAbbreviatedPath": "\/assets\/img\/rs-minimal-white.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/samsung.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 48745,
+		"inputAbbreviatedPath": "\/assets\/img\/samsung.png",
+		"outputAbbreviatedPath": "\/assets\/img\/samsung.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
