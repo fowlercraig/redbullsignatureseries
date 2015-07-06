@@ -47,7 +47,7 @@
                     </div>
                     <hr class="invisible">
                     <div id="home--shows-sponsors" class="text-center">
-                      <h3>Season long partners:</h3>
+                      <h4>Season long partners:</h4>
                       <a href="http://gopro.com/" target="_blank"><img src="/assets/img/gopro.png"   class="img-responsive" alt="GoPro" /></a>
                       <a href="http://synthetics.pennzoil.com/" target="_blank"><img src="/assets/img/pennzoil.png" class="img-responsive" alt="Pennzoil Synthetics" /></a>
                       <a href="http://app.appsflyer.com/com.samsung.milk.milkvideo?pid=partner&c=redbull" target="_blank"><img src="/assets/img/samsung.png" class="img-responsive" alt="Samsung Milk Video" /></a>

@@ -5853,6 +5853,13 @@ html {
   font-size: 0.9375rem;
   text-transform: uppercase;
 }
+#home--shows-sponsors h1,
+#home--shows-sponsors h2,
+#home--shows-sponsors h3,
+#home--shows-sponsors h4,
+#home--shows-sponsors h5 {
+  color: #ffffff;
+}
 #home--content {
   position: fixed;
   height: 100%;
