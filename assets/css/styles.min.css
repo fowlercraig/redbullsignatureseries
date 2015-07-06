@@ -5732,7 +5732,7 @@ html {
   background: url('/assets/img/nbcs-stacked-logo.png');
   background-repeat: no-repeat;
   background-position: center right;
-  background-size: auto 70% ;
+  background-size: auto 55px;
   padding-right: 100px;
 }
 #header a.social,
@@ -6066,6 +6066,9 @@ html {
 .content .fluid-width-video-wrapper {
   padding: 0!important;
 }
+.video-popup .mfp-close {
+  color: #ffffff;
+}
 #home--above {
   background: #000000;
   width: 100%;
@@ -6105,6 +6108,7 @@ html {
 }
 #home--above .coverlink {
   background-size: cover;
+  background-position: center center;
 }
 #home--above .content {
   padding-bottom: 50px;

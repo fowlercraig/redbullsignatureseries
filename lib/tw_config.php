@@ -7,10 +7,14 @@ $settings = array(
     'plugins'              => array('/assets/js/plugins.min.js'),
     'scripts'              => array('/assets/js/scripts.min.js'),
     'miles'                => array('/assets/js/miles.js'),
+    'bc'                   => array('http://admin.brightcove.com/js/BrightcoveExperiences.js'),
+    'bcadmin'              => array('http://admin.brightcove.com/js/APIModules_all.js'),
   ),
 
   'default_scripts'        => array(
     'jquery-g',
+    'bc',
+    'bcadmin',
     'plugins',
     'scripts',
   ),

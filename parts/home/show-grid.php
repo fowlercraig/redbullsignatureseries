@@ -2,7 +2,7 @@
   <div class="fs-row">
     <div class="video fs-cell fs-all-full">
       <?php if ( $end_date_passed_check->format('Ymd') < date('Ymd') ): ?>
-      <a class="" target="blank" href="<?php the_field('red_bull_tv_link'); ?>">
+      <a class="popup-video" href="#aired-<?php echo $counter; ?>">
       <?php else: ?>
       <a class="btn-moreinfo" target="blank" href="<?php the_field('more_info_link'); ?>">
       <?php endif; ?>
@@ -40,7 +40,7 @@
           </div>
           <?php endif; ?>
           <?php if ( $end_date_passed_check->format('Ymd') < date('Ymd') ): ?>
-          <a class="btn btn-link btn-first" target="blank" href="<?php the_field('red_bull_tv_link'); ?>">Watch Now on RedBull.tv</a>
+          <!--<a class="btn btn-link btn-first" target="blank" href="<?php the_field('red_bull_tv_link'); ?>">Watch Now on RedBull.tv</a>-->
           <?php endif; ?>
           <a class="btn btn-link btn-first target btn-moreinfo" href="<?php the_field('more_info_link'); ?>">More Event Info</a>
         </div>
@@ -48,3 +48,6 @@
     </div>
   </div>
 </article>
+<div id="aired-<?php echo $counter; ?>" class="video-popup mfp-hide">
+  <?php the_field('teaser_embed'); ?>
+</div> <!-- /#video-01 -->

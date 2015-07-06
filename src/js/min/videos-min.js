@@ -1,1 +1,1 @@
-function videos(){$(".popup-video").magnificPopup({type:"iframe",mainClass:"mfp-fade",removalDelay:160,preloader:!1,fixedContentPos:!1,iframe:{markup:'<div class="mfp-iframe-scaler"><div class="mfp-close"></div><iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe></div>',srcAction:"iframe_src"}})}videos();
+function videos(){$(".popup-video").magnificPopup({type:"inline",callbacks:{open:function(){},close:function(){}}})}videos(),$(window).resize(function(){}).resize();
