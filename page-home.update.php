@@ -34,16 +34,10 @@
                 <aside class="fs-cell fs-lg-3 fs-md-2 fs-sm-3 sizer-item">
                   <div id="sidebar-sticky">
                     <div id="ad--main">
-                      <div id="div-gpt-ad-1435245873844-0" style="height: 250px; width: 300px;">
-                        Ad should be here.
-                        <script type='text/javascript'>
-                          googletag.cmd.push(function() {
-                            googletag.defineSlot('/29829229/rbsigseries', [300, 250], 'div-gpt-ad-1435245873844-0').addService(googletag.pubads());
-                            googletag.pubads().enableSingleRequest();
-                            googletag.pubads().enableVideoAds();
-                            googletag.enableServices();
-                          });
-                        </script>
+                      <div id='div-gpt-ad-1435245873844-0' style='width:300px; height:250px;'>
+                      <script type='text/javascript'>
+                      googletag.cmd.push(function() { googletag.display('div-gpt-ad-1435245873844-0'); });
+                      </script>
                       </div>
                     </div>
                     <hr class="invisible">
