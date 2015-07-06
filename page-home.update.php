@@ -34,7 +34,8 @@
                 <aside class="fs-cell fs-lg-3 fs-md-2 fs-sm-3 sizer-item">
                   <div id="sidebar-sticky">
                     <div id="ad--main">
-                      <div id="div-gpt-ad-1435245873844-0">
+                      <div id="div-gpt-ad-1435245873844-0" style="height: 250px; width: 300px;">
+                        Ad should be here.
                         <script type='text/javascript'>
                           googletag.cmd.push(function() {
                             googletag.defineSlot('/29829229/rbsigseries', [300, 250], 'div-gpt-ad-1435245873844-0').addService(googletag.pubads());
@@ -47,7 +48,7 @@
                     </div>
                     <hr class="invisible">
                     <div id="home--shows-sponsors" class="text-center">
-                      <h4>Season long partners:</h4>
+                      <h4>2015 Season Partners:</h4>
                       <a href="http://gopro.com/" target="_blank"><img src="/assets/img/gopro.png"   class="img-responsive" alt="GoPro" /></a>
                       <a href="http://synthetics.pennzoil.com/" target="_blank"><img src="/assets/img/pennzoil.png" class="img-responsive" alt="Pennzoil Synthetics" /></a>
                       <a href="http://app.appsflyer.com/com.samsung.milk.milkvideo?pid=partner&c=redbull" target="_blank"><img src="/assets/img/samsung.png" class="img-responsive" alt="Samsung Milk Video" /></a>
