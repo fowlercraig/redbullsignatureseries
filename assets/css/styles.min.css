@@ -5445,7 +5445,7 @@ form textarea:focus {
   text-align: right;
 }
 .divider {
-  background: #e7e7ec;
+  background: rgba(255, 255, 255, 0.25);
 }
 .divider.vertical {
   width: 1px;
@@ -5805,6 +5805,12 @@ html {
 #page--main {
   padding-top: 170px;
 }
+#page--main.single {
+  padding-top: 80px;
+  position: relative;
+  z-index: 999;
+  padding-bottom: 25px;
+}
 #page--main.show {
   padding-top: 340px;
   padding-bottom: 50px;
@@ -6083,6 +6089,9 @@ html {
 .video-popup .mfp-close {
   color: #ffffff;
 }
+#presentedby .invisible {
+  margin: 10px 0;
+}
 #presentedby h1,
 #presentedby h2,
 #presentedby h3,
@@ -6090,6 +6099,11 @@ html {
 #presentedby h5,
 #presentedby h6 {
   color: #ffffff;
+  display: inline-block;
+  height: 50px;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 50px;
 }
 @media screen and (min-width: 300px) {
   #presentedby {
@@ -6098,8 +6112,13 @@ html {
 }
 @media screen and (min-width: 740px) {
   #presentedby {
-    float: right;
+    float: left;
   }
+}
+#presentedby img {
+  height: 50px;
+  width: auto;
+  display: inline-block;
 }
 #home--above {
   background: #000000;
@@ -6525,6 +6544,37 @@ html {
 }
 .showlist.grid .show .meta .btn:hover {
   color: #ffffff;
+}
+#show--header {
+  position: relative;
+  z-index: 29;
+}
+#show--title {
+  color: #ffffff;
+  margin-bottom: 10px;
+  -webkit-hyphens: none;
+     -moz-hyphens: none;
+      -ms-hyphens: none;
+          hyphens: none;
+}
+@media screen and (min-width: 300px) {
+  #show--title {
+    font-size: 72px;
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+}
+@media screen and (min-width: 740px) {
+  #show--title {
+    font-size: 72px;
+    font-size: 4.5rem;
+  }
+}
+@media screen and (min-width: 980px) {
+  #show--title {
+    font-size: 72px;
+    font-size: 4.5rem;
+  }
 }
 .showlist.slider .show {
   margin-top: 0;

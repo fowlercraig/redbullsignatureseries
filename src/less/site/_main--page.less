@@ -26,6 +26,13 @@
 
   padding-top: @padding-top*2;
 
+  &.single {
+    padding-top: 80px;
+    position: relative;
+    z-index: 999;
+    padding-bottom: @spaced;
+  }
+
   &.show {
     padding-top: @padding-top*4;
     padding-bottom: @spaced*2;
@@ -355,9 +362,19 @@
 
 
 #presentedby {
+
+  @presentsize: 50px;
+
+  .invisible {
+    margin: 10px 0;
+  }
   
   h1,h2,h3,h4,h5,h6 {
     color: @white;
+    display: inline-block;
+    height: @presentsize;
+    .font_size(18);
+    line-height: @presentsize;
   }
 
   @media @min {
@@ -365,7 +382,13 @@
   }
 
   @media @tablet {
-    float: right;
+    float: left;
+  }
+
+  img {
+    height: @presentsize;
+    width: auto;
+    display: inline-block;
   }
 
 }
