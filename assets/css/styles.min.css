@@ -6083,6 +6083,24 @@ html {
 .video-popup .mfp-close {
   color: #ffffff;
 }
+#presentedby h1,
+#presentedby h2,
+#presentedby h3,
+#presentedby h4,
+#presentedby h5,
+#presentedby h6 {
+  color: #ffffff;
+}
+@media screen and (min-width: 300px) {
+  #presentedby {
+    float: left;
+  }
+}
+@media screen and (min-width: 740px) {
+  #presentedby {
+    float: right;
+  }
+}
 #home--above {
   background: #000000;
   width: 100%;

@@ -21,6 +21,15 @@
             <a target="blank" class="social ss-social-circle ss-twitter"  alt="facebook"href="https://www.facebook.com/sharer/sharer.php?u=<?php the_field('facebook_share', 32); ?>"></a>
           </div>
         </header>
+
+        <?php $image = get_field('logo'); ?>
+        <?php if( !empty($image) ): ?>  
+        <div id="presentedby" class="fs-cell fs-xl-2 fs-lg-3 fs-md-2 fs-sm-1 fs-xs-half fs-right text-center">
+        <hr class="invisible fs-md-hide">
+        <h4>Presented by:</h4>
+        <img class="img-responsive" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+        <?php endif; ?>  
+
       </div>
     </div>
   </div>
