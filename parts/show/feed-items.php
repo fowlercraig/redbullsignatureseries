@@ -17,5 +17,5 @@
     <h3><a href="<?php echo $url; ?>" rel="external"><?php echo $title; ?></a></h3>
   </header>
   <div class="content"><p><?php echo $teaser; ?></p></div>
-  <footer><a href="<?php echo $url; ?>" class="btn btn-primary moreinfo" rel="external">Read More</a></footer>
+  <footer><a href="<?php echo $url; ?>" class="btn btn-primary moreinfo btn-bg-red" rel="external">Read More</a></footer>
 </article>

@@ -5528,6 +5528,13 @@ form textarea:focus {
   background: none;
   box-shadow: inset 0 0 0 1px #d64242;
 }
+.btn.btn-bg-red {
+  background: #cc1c4a;
+  color: #ffffff;
+}
+.btn.btn-bg-red:hover {
+  background: #b61942;
+}
 .btn.btn-success {
   color: #ffffff;
   background: #74c080;
