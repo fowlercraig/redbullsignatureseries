@@ -19,7 +19,7 @@
           <div class="fs-row">
             <header class="fs-cell fs-lg-12 fs-md-3 fs-sm-3">
               <h4><span>Just Aired:</span> <?php echo $date->format('M d, Y'); ?></h4>
-              <h1><a class="btn-moreinfo" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+              <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
               <!--<h1><a class="btn-moreinfo" href="<?php the_field('more_info_link'); ?>"><?php the_title(); ?></a></h1>-->
             </header>
             <div class="content fs-cell fs-lg-12 fs-md-3 fs-sm-3"><?php the_content(); ?></div>

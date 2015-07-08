@@ -35,6 +35,7 @@
       var selectors = [
 
         "iframe.things",
+        "iframe[src*='sharevideo.']",
         "iframe[src*='player.vimeo.com']",
         "iframe[src*='youtube.com']",
         "iframe[src*='youtube-nocookie.com']",
