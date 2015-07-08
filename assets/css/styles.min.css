@@ -6056,10 +6056,29 @@ html {
   margin-bottom: 0;
 }
 #home--recent-slider {
-  height: 360px;
   position: relative;
   overflow: visible;
   padding-top: 0;
+}
+@media screen and (min-width: 740px) {
+  #home--recent-slider {
+    min-height: 525px;
+  }
+}
+@media screen and (min-width: 980px) {
+  #home--recent-slider {
+    min-height: 385px;
+  }
+}
+@media screen and (min-width: 980px) {
+  #home--recent-slider .desc {
+    min-height: 310px;
+  }
+}
+@media screen and (min-width: 1220px) {
+  #home--recent-slider .desc {
+    min-height: 385px;
+  }
 }
 #home--recent-slider .rsOverflow,
 #home--recent-slider .rsVisibleNearbyWrap {
@@ -6574,6 +6593,23 @@ html {
   #show--title {
     font-size: 72px;
     font-size: 4.5rem;
+  }
+}
+#show .show--info .desc {
+  padding-top: 0;
+  position: relative;
+}
+#show .show--info .centered {
+  width: 100%;
+}
+@media screen and (min-width: 980px) {
+  #show .show--info .centered {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
 }
 .showlist.slider .show {

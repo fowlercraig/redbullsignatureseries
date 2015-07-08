@@ -61,13 +61,16 @@
               <?php else: ?>
               <h4><span>Coming Up Soon:</span></h4>
               <?php endif; ?>
-              <h1><a class="btn-moreinfo" href="<?php the_field('more_info_link'); ?>"><?php the_title(); ?></a></h1>
+              <!--<h1><a class="btn-moreinfo" href="<?php the_field('more_info_link'); ?>"><?php the_title(); ?></a></h1>-->
+              <h1><a class="" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
               <h2><span>Catch the Broadcast on NBC:</span> <?php echo $date->format('M d, Y'); ?> @ <?php the_field('air_time'); ?></h2>
             </header>
             <div class="meta">
+              <a class="btn btn-link" href="<?php the_permalink(); ?>">More Event Info</a>
+              <!--<a class="btn btn-link btn-moreinfo" href="<?php the_field('more_info_link'); ?>">More Event Info</a>-->
               <?php $time = get_field('air_time'); ?>
               <div title="Add to Calendar" class="addthisevent btn btn-link" data-direct="google">
-                Add to Calendar
+                Add a Reminder
                 <span class="start"><?php echo $date->format('m/d/y'); ?> <?php echo str_replace("EST", "", $time); ?></span>
                 <span class="end"><?php echo $date->format('m/d/y'); ?> <?php echo str_replace("EST", "", $time); ?></span>
                 <span class="timezone">America/New_York</span>
@@ -76,7 +79,6 @@
                 <span class="location">NBC</span>
                 <span class="date_format">MM/DD/YYYY</span>
               </div>
-              <a class="btn btn-link btn-moreinfo" href="<?php the_field('more_info_link'); ?>">More Event Info</a>
             </div>
           </div>
         </div>

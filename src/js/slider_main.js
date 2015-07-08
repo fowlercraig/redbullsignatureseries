@@ -26,12 +26,12 @@ $(document).ready(function(){
 
   var slider = $('#home--above').data('royalSlider');
 
-  $('#home--recent .arrow-left').on('click', function(event){
+  $('#home--above .arrow-left').on('click', function(event){
     event.preventDefault();
     slider.prev();
   });
 
-  $('#home--recent .arrow-right').on('click', function(event){
+  $('#home--above .arrow-right').on('click', function(event){
     event.preventDefault();
     slider.next();
   });

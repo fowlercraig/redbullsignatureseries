@@ -4,7 +4,8 @@
       <?php if ( $end_date_passed_check->format('Ymd') < date('Ymd') ): ?>
       <a class="popup-video" href="#aired-<?php echo $counter; ?>">
       <?php else: ?>
-      <a class="btn-moreinfo" target="blank" href="<?php the_field('more_info_link'); ?>">
+      <a href="<?php the_permalink(); ?>">
+      <!--<a class="btn-moreinfo" target="blank" href="<?php the_field('more_info_link'); ?>">-->
       <?php endif; ?>
         <?php
 
@@ -23,13 +24,16 @@
       <div class="fs-row">
         <header class="fs-cell fs-all-full">
           <h4><?php echo $date->format('M d, Y'); ?> @ <?php the_field('air_time'); ?>  on NBC</h4>
-          <h1><a class="btn-moreinfo" target="blank" href="<?php the_field('more_info_link'); ?>"><?php the_title(); ?></a></h1>
+          <h1><a class="" target="blank" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+          <!--<h1><a class="btn-moreinfo" target="blank" href="<?php the_field('more_info_link'); ?>"><?php the_title(); ?></a></h1>-->
         </header>
         <div class="meta fs-cell fs-all-full">
+          <a class="btn btn-link btn-first target" href="<?php the_permalink(); ?>">More Event Info</a>
+          <!--<a class="btn btn-link btn-first target btn-moreinfo" href="<?php the_field('more_info_link'); ?>">More Event Info</a>-->
           <?php if ( $end_date_passed_check->format('Ymd') > date('Ymd') ): ?>
           <?php $time = get_field('air_time'); ?>
           <div title="Add to Calendar" class="addthisevent btn btn-link" data-direct="google">
-            Add to Calendar
+            Add a Reminder
             <span class="start"><?php echo $date->format('m/d/y'); ?> <?php echo str_replace("EST", "", $time); ?></span>
             <span class="end"><?php echo $date->format('m/d/y'); ?> <?php echo str_replace("EST", "", $time); ?></span>
             <span class="timezone">America/New_York</span>
@@ -42,7 +46,6 @@
           <?php if ( $end_date_passed_check->format('Ymd') < date('Ymd') ): ?>
           <!--<a class="btn btn-link btn-first" target="blank" href="<?php the_field('red_bull_tv_link'); ?>">Watch Now on RedBull.tv</a>-->
           <?php endif; ?>
-          <a class="btn btn-link btn-first target btn-moreinfo" href="<?php the_field('more_info_link'); ?>">More Event Info</a>
         </div>
       </div>
     </div>

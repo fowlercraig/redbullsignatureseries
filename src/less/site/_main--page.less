@@ -308,10 +308,27 @@
 
     &-slider {
 
-      height: 360px;
+      @media @tablet {
+        min-height: 525px;  
+      }
+
+      @media @desktop {
+        min-height: 385px;  
+      }
+      
       position: relative;
       overflow: visible;
       padding-top: 0;
+
+      .desc {
+        @media @desktop {
+          min-height: 310px;  
+        }
+        @media @max {
+          min-height: 385px;  
+        }
+        
+      }
 
       .rsOverflow, .rsVisibleNearbyWrap {
         overflow: visible;
