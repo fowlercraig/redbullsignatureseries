@@ -15,7 +15,7 @@
     <div class="fs-cell fs-lg-11 fs-md-6 fs-sm-3 fs-centered">
       <h1 id="show--title"><?php the_title(); ?></h1>
       <div class="buttons">
-        <a class="btn btn-link btn-primary btn-moreinfo btn-bg-red" href="<?php the_field('more_info_link'); ?>">More Event Info</a>
+        <a id="moreinfobtn" class="btn btn-link btn-primary btn-moreinfo btn-bg-red" href="<?php the_field('more_info_link'); ?>">More Event Info</a>
         <span class="btn">Share This:</span>
         <a target="blank" class="social ss-social-circle ss-facebook" alt="twitter" href="https://twitter.com/home?status=<?php the_field('twitter_share', 32); ?>"></a>
         <a target="blank" class="social ss-social-circle ss-twitter"  alt="facebook"href="https://www.facebook.com/sharer/sharer.php?u=<?php the_field('facebook_share', 32); ?>"></a>
@@ -44,6 +44,12 @@
 <?php include locate_template('parts/miles.php' ); ?>
 
 </div><!-- Show BG -->
+
+<script>
+  setTimeout(function(){
+    $("#moreinfobtn").click();
+  },1000);
+</script>
 
 </div>
 
