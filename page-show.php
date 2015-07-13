@@ -45,12 +45,6 @@
 
 </div><!-- Show BG -->
 
-<script>
-  setTimeout(function(){
-    $("#moreinfobtn").click();
-  },1000);
-</script>
-
 </div>
 
 <?php get_footer(); ?>

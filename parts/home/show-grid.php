@@ -28,8 +28,13 @@
           <!--<h1><a class="btn-moreinfo" target="blank" href="<?php the_field('more_info_link'); ?>"><?php the_title(); ?></a></h1>-->
         </header>
         <div class="meta fs-cell fs-all-full">
+          
+          <?php if ( $end_date_passed_check->format('Ymd') > date('Ymd') ): ?>
+          <a class="btn btn-link btn-first target btn-moreinfo" href="<?php the_field('more_info_link'); ?>">More Event Info</a>
+          <?php else: ?>
           <a class="btn btn-link btn-first target" href="<?php the_permalink(); ?>">More Event Info</a>
-          <!--<a class="btn btn-link btn-first target btn-moreinfo" href="<?php the_field('more_info_link'); ?>">More Event Info</a>-->
+          <?php endif ;?>
+
           <?php if ( $end_date_passed_check->format('Ymd') > date('Ymd') ): ?>
           <?php $time = get_field('air_time'); ?>
           <div title="Add to Calendar" class="addthisevent btn btn-link" data-direct="google">

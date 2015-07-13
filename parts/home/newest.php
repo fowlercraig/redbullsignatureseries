@@ -66,8 +66,13 @@
               <h2><span>Catch the Broadcast on NBC:</span> <?php echo $date->format('M d, Y'); ?> @ <?php the_field('air_time'); ?></h2>
             </header>
             <div class="meta">
-              <a class="btn btn-link" href="<?php the_permalink(); ?>">More Event Info</a>
-              <!--<a class="btn btn-link btn-moreinfo" href="<?php the_field('more_info_link'); ?>">More Event Info</a>-->
+            
+              <?php if ( $end_date_passed_check->format('Ymd') > date('Ymd') ): ?>
+              <a class="btn btn-link btn-first target btn-moreinfo" href="<?php the_field('more_info_link'); ?>">More Event Info</a>
+              <?php else: ?>
+              <a class="btn btn-link btn-first target" href="<?php the_permalink(); ?>">More Event Info</a>
+              <?php endif ;?>
+
               <?php $time = get_field('air_time'); ?>
               <div title="Add to Calendar" class="addthisevent btn btn-link" data-direct="google">
                 Add a Reminder
