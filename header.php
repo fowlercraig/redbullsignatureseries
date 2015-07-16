@@ -7,7 +7,13 @@
 <meta charset="utf-8">
 <title><?php wp_title(' | ', true, 'right'); ?></title>
 <meta name="description" content="<?php bloginfo( 'description' ) ?>">
-<link rel="shortcut icon" href="/assets/img/favicon.ico">
+
+<link rel="shortcut icon"    type="image/x-icon" href="/assets/favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57"       href="/assets/touch-icon-iphone-57.png" />
+<link rel="apple-touch-icon" sizes="114x114"     href="/assets/touch-icon-iphone-114.png" />
+<link rel="apple-touch-icon" sizes="72x72"       href="/assets/touch-icon-iphone-72.png" />
+<link rel="apple-touch-icon" sizes="144x144"     href="/assets/touch-icon-iphone-144.png" />
+
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <script type="text/javascript" src="https://addthisevent.com/libs/1.6.0/ate.min.js"></script>
 

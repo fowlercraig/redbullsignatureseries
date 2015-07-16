@@ -302,6 +302,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/assets\/touch-icon-iphone-144.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 12185,
+		"inputAbbreviatedPath": "\/assets\/touch-icon-iphone-144.png",
+		"outputAbbreviatedPath": "\/assets\/touch-icon-iphone-144.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/warning\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
