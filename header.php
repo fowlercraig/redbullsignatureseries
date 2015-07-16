@@ -76,10 +76,15 @@ googletag.enableServices();
         <div class="fs-cell fs-lg-6 fs-md-6 fs-sm-3">
           <a id="site_logo" href="/"><?php bloginfo( 'name' ) ?></a>
           <a href="http://www.nbcsports.com/" target="blank" class="nbc-logo hide-mobile">Watch All Season Long on</a>
-          <a class="show-mobile right">Menu</a>
+          <div class="btn text-right right show-mobile mobile-menu-container">
+            <a class="activate-mobile-menu toggle" data-swap-target=".mobile-menu">Menu</a>
+            <div class="mobile-menu">
+              <menu><?php echo strip_tags(wp_nav_menu( $menuParameters ), '<a>' ); ?></menu>
+            </div>
+          </div>
         </div>
         <div class="fs-cell fs-lg-6 fs-md-hide fs-sm-hide text-right">
-          <menu ><?php echo strip_tags(wp_nav_menu( $menuParameters ), '<a>' ); ?></menu>
+          <menu><?php echo strip_tags(wp_nav_menu( $menuParameters ), '<a>' ); ?></menu>
           <a target="blank" class="social ss-social-circle ss-twitter"   alt="twitter"   href="https://www.facebook.com/RedBullSignatureSeries"></a>
           <a target="blank" class="social ss-social-circle ss-facebook"  alt="facebook"  href="https://twitter.com/rbsigseries"></a>
           <a target="blank" class="social ss-social-circle ss-instagram" alt="instagram" href="https://instagram.com/rbsigseries/"></a>

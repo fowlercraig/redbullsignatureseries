@@ -1,0 +1,70 @@
+#header {
+
+   .mobile {
+
+      &-menu-container {
+         position: relative;
+         margin: 0;
+         height: 80px;
+
+         > a {
+            &.fs-swap-active {
+               color: @white50;
+            }
+         }
+
+      }
+
+      &-menu {
+         position: absolute;
+         background-color: @white;
+         right: 0;
+         width: 200px;
+         margin-top: -15px;
+         display: none;
+
+         &.fs-swap-active {
+            display: block;
+         }
+
+         &:before {
+            content: '';
+            display: block;
+            width: 0;
+            height: 0;
+            margin-top: -10px;
+            right: 30px;
+            position: absolute;
+            border-style: solid;
+            border-width: 0 10px 10px 10px;
+            border-color: transparent transparent @white transparent;
+
+         }
+
+         menu {
+
+            float: right;
+            width: 100%;
+
+            a {
+               display: block;
+               width: 100%;
+               float: none;
+               text-align: right;
+               padding-right: 15px;
+               height: 40px;
+               line-height: 40px;
+               color: @rb-red;
+               border-bottom: 1px solid @lighterGray;
+               &:last-child {
+                  border-bottom: 0;
+               }
+            }
+
+         }
+
+      }
+
+   }
+
+}

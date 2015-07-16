@@ -1,7 +1,7 @@
 // @codekit-prepend "featured.js"
 // @codekit-prepend "slider.js"
 // @codekit-prepend "slider_main.js"
-// @codekit-append "miles.js"
+// @codekit-append  "miles.js"
 // @codekit-prepend "moreinfo.js"
 // @codekit-prepend "videos.js"
 // @codekit-prepend "_smoothscroll.js"
@@ -64,6 +64,8 @@ function headerjunk(){
 }
 
 $(function(){
+
+  $(".toggle").swap();
 
   $(".content, #page--video, .video-popup").fitVids();
   $(".tab").tabs({
