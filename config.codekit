@@ -152,7 +152,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 31153,
+		"initialSize": 78775,
 		"inputAbbreviatedPath": "\/assets\/img\/nbcs-stacked-logo.png",
 		"outputAbbreviatedPath": "\/assets\/img\/nbcs-stacked-logo.png",
 		"outputPathIsOutsideProject": 0,
@@ -218,7 +218,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 590827,
+		"initialSize": 253248,
 		"inputAbbreviatedPath": "\/assets\/img\/sig-series-bg-2.jpg",
 		"outputAbbreviatedPath": "\/assets\/img\/sig-series-bg-2.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -302,6 +302,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/assets\/touch-icon-iphone-114.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 9023,
+		"inputAbbreviatedPath": "\/assets\/touch-icon-iphone-114.png",
+		"outputAbbreviatedPath": "\/assets\/touch-icon-iphone-114.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/touch-icon-iphone-144.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -309,6 +320,28 @@
 		"initialSize": 12185,
 		"inputAbbreviatedPath": "\/assets\/touch-icon-iphone-144.png",
 		"outputAbbreviatedPath": "\/assets\/touch-icon-iphone-144.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/touch-icon-iphone-57.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3824,
+		"inputAbbreviatedPath": "\/assets\/touch-icon-iphone-57.png",
+		"outputAbbreviatedPath": "\/assets\/touch-icon-iphone-57.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/touch-icon-iphone-72.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4602,
+		"inputAbbreviatedPath": "\/assets\/touch-icon-iphone-72.png",
+		"outputAbbreviatedPath": "\/assets\/touch-icon-iphone-72.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

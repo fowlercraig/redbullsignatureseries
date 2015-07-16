@@ -83,7 +83,7 @@ googletag.enableServices();
           <a id="site_logo" href="/"><?php bloginfo( 'name' ) ?></a>
           <a href="http://www.nbcsports.com/" target="blank" class="nbc-logo hide-mobile">Watch All Season Long on</a>
           <div class="btn text-right right show-mobile mobile-menu-container">
-            <a class="activate-mobile-menu toggle" data-swap-target=".mobile-menu">Menu</a>
+            <a class="activate-mobile-menu mobile-btn" data-swap-target=".mobile-menu">Menu</a>
             <div class="mobile-menu">
               <menu><?php echo strip_tags(wp_nav_menu( $menuParameters ), '<a>' ); ?></menu>
             </div>
