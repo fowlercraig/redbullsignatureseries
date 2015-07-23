@@ -10,6 +10,7 @@ function videos(){
 
 	            // Play video on open:
 	            //$(this.content).find('video')[0].play();
+	            $(".content, #page--video, .video-popup").fitVids();
 
 	        },
 	        close: function() {

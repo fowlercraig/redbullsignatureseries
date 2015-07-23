@@ -62,7 +62,7 @@
               <h4><span>Coming Up Soon:</span></h4>
               <?php endif; ?>
               <!--<h1><a class="btn-moreinfo" href="<?php the_field('more_info_link'); ?>"><?php the_title(); ?></a></h1>-->
-              <h1><a class="" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+              <h1><a class="btn-moreinfo" href="<?php the_field('more_info_link'); ?>"><?php the_title(); ?></a></h1>
               <h2><span>Watch the Broadcast on NBC:</span> <?php echo $date->format('M d, Y'); ?> @ <?php the_field('air_time'); ?></h2>
             </header>
             <div class="meta">
