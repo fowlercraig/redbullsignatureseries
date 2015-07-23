@@ -1,5 +1,7 @@
 <?php
 
+$showWidth = 'fs-cell fs-xl-6 fs-lg-6 fs-md-3 fs-sm-3';
+
 // Dependencies
 
 require_once locate_template('/lib/default.php');
