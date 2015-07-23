@@ -97,6 +97,6 @@ googletag.enableServices();
         </div>
       </div>
     </header>
-    <div id="header-overlay"></div>
+    <div id="header-overlay" <?php body_class(); ?>></div>
 
 

@@ -25,8 +25,6 @@
   </div>
 </header>
 
-<hr class="divider">
-
 <section id="home--recent">
   <div class="fs-row">
     <div class="fs-cell fs-lg-12 fs-md-6 fs-sm-3 fs-padded centered">

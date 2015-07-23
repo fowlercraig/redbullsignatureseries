@@ -5605,6 +5605,10 @@ html {
   opacity: .75;
   pointer-events: none;
 }
+#header-overlay.page-child {
+  display: none;
+  opacity: 0;
+}
 #header #site_logo {
   background: url('/assets/img/logo.png') center left no-repeat;
   text-indent: -9999px;

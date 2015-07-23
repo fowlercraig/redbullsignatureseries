@@ -38,7 +38,6 @@
     $date_passed = 'past';
   }
 
-
 ?>
 
 <?php include locate_template('parts/home/show-grid.php' ); ?>
