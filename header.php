@@ -52,6 +52,19 @@ googletag.enableServices();
 });
 </script>
 
+<style>
+#home {
+      opacity: 0;
+    }
+</style>
+<noscript>
+  <style>
+    #home {
+      opacity: 1;
+    }
+  </style>
+</noscript>
+
 </head>
 
 <?php

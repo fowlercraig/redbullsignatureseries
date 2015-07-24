@@ -2,6 +2,14 @@
 </div><!--Wrapper-->
 <?php wp_footer(); ?>
 
+<script>
+	$(window).load(function(){
+		$("#home").transition({
+			opacity:1,
+		});
+	});
+</script>
+
 <!-- RBMH WRAPPER START -->
 <script type="text/javascript">
 
