@@ -117,6 +117,16 @@
 
 #home {
 
+  &--loading {
+    .center();
+    z-index: 99;
+    width: 320px;
+    height: 320px;
+    background: url('/assets/img/logo.png') center center no-repeat;
+    background-size: contain;
+    position: fixed;
+  }
+
   &--shows-sponsors {
     h1,h2,h3,h4,h5 {
       color: @white;
@@ -136,12 +146,12 @@
     //overflow-x: hidden;
     //overflow-y: scroll;
 
-    &-loading {
-      height: 32px;
-      width: 32px;
-      .center();
-      background: url('/assets/img/ajax-loader.gif');
-    }
+    // &-loading {
+    //   height: 32px;
+    //   width: 32px;
+    //   .center();
+    //   background: url('/assets/img/ajax-loader.gif');
+    // }
 
     &-newwindow {
       position: absolute;

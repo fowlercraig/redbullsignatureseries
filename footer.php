@@ -7,6 +7,7 @@
 		$("#home").transition({
 			opacity:1,
 		});
+		$("#home--loading").fadeOut();
 	});
 </script>
 

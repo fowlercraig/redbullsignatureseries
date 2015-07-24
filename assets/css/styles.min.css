@@ -5873,6 +5873,20 @@ html {
   font-size: 0.9375rem;
   text-transform: uppercase;
 }
+#home--loading {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 99;
+  width: 320px;
+  height: 320px;
+  background: url('/assets/img/logo.png') center center no-repeat;
+  background-size: contain;
+  position: fixed;
+}
 #home--shows-sponsors h1,
 #home--shows-sponsors h2,
 #home--shows-sponsors h3,
@@ -5893,17 +5907,6 @@ html {
           transform: translate(0%, 0%);
   overflow: visible;
   -webkit-overflow-scrolling: touch;
-}
-#home--content-loading {
-  height: 32px;
-  width: 32px;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  background: url('/assets/img/ajax-loader.gif');
 }
 #home--content-newwindow {
   position: absolute;

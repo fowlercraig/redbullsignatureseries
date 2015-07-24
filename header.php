@@ -54,15 +54,18 @@ googletag.enableServices();
 
 <style>
 #home {
-      opacity: 0;
-    }
+opacity: 0;
+}
 </style>
 <noscript>
-  <style>
-    #home {
-      opacity: 1;
-    }
-  </style>
+<style>
+#home {
+opacity: 1;
+}
+.loading-icon {
+  display: none;
+}
+</style>
 </noscript>
 
 </head>
