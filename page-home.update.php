@@ -6,10 +6,10 @@
 
   <div id="home--bg">
 
-  <section id="home--recent">
+  <section id="home--recent" class="home">
     <div class="fs-row">
       <div class="fs-cell fs-lg-11 fs-md-6 fs-sm-3 fs-padded centered">
-        <div class="fs-row showlist slider royalslider rsMinW" id="home--recent-slider">
+        <div class="fs-row showlist slider royalslider rsMinW home" id="home--recent-slider">
           <?php include locate_template('parts/home/past-show-recent.php' ); ?>
         </div>
         <span class="arrow arrow-left"><a href="#" class="ss-gizmo ss-navigateleft"></a></span>

@@ -12,8 +12,15 @@
 <header id="page--main" class="single">
   <div class="fs-row" id="show--header">
 
-    <div class="fs-cell fs-lg-11 fs-md-6 fs-sm-3 fs-centered">
+    <div class="fs-cell fs-lg-11 fs-md-5 fs-sm-3 fs-centered">
+    <div class="fs-row">
+
+    <div class="fs-cell fs-lg-4 fs-md-6 fs-sm-3">
+      <hr class="invisible">
       <h1 id="show--title"><?php the_title(); ?></h1>
+      <?php the_post(); ?>
+      <?php the_content(); ?>
+      <hr class="invisible">
       <div class="buttons">
         <a id="moreinfobtn" class="btn btn-link btn-primary btn-bg-red" target="blank" href="<?php the_field('more_info_link'); ?>">More Event Info</a>
         <span class="btn">Share This:</span>
@@ -22,21 +29,21 @@
       </div>
     </div>
 
+    <section id="home--recent" class="fs-cell fs-lg-8 fs-md-6 fs-sm-3 fs-padded centered show">
+      <div class="fs-row showlist slider royalslider rsMinW show" id="home--recent-slider">
+        <?php include locate_template('parts/show/assc-videos.php' ); ?>
+      </div>
+      <span class="arrow arrow-left"><a href="#" class="ss-gizmo ss-navigateleft"></a></span>
+      <span class="arrow arrow-right"><a href="#" class="ss-gizmo ss-navigateright"></a></span>  
+    </section>
+
+    </div>
+    </div>
+
   </div>
 </header>
 
-<section id="home--recent">
-  <div class="fs-row">
-    <div class="fs-cell fs-lg-12 fs-md-6 fs-sm-3 fs-padded centered">
-      <div class="fs-row showlist slider royalslider rsMinW" id="home--recent-slider">
-        <?php include locate_template('parts/show/assc-videos.php' ); ?>
-        <?php // include locate_template('parts/home/past-show-recent.php' ); ?>
-      </div>
-      <span class="arrow arrow-left"><a href="#" class="ss-gizmo ss-navigateleft"></a></span>
-      <span class="arrow arrow-right"><a href="#" class="ss-gizmo ss-navigateright"></a></span>
-    </div>
-  </div>
-</section>
+
 
 <?php include locate_template('parts/show/related-items.php' ); ?>
 <?php include locate_template('parts/miles.php' ); ?>

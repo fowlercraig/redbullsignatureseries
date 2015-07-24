@@ -2,7 +2,7 @@
 
 <?php $counter = 'video' ?>
 
-<?php include locate_template('/parts/home/show-posts-page.php' ); ?>
+<?php // include locate_template('/parts/home/show-posts-page.php' ); ?>
 
 <?php while ( have_rows('previous_seasons') ) : the_row(); ?>
 
@@ -15,9 +15,10 @@
 
 <div <?php post_class('show recent rsContent'); ?>>
   <div class="fs-row">
-    <div class="fs-cell fs-lg-11 fs-md-5 fs-sm-3 fs-centered">
+    <div class="fs-cell fs-lg-12 fs-md-6 fs-sm-3 fs-centered">
       <div class="fs-row show--info">
         <div class="video fs-cell fs-lg-12 fs-md-6 fs-sm-3 sizer-item">
+          <span class="caption" href="<?php the_field('more_info_link'); ?>">Signature Series <?php the_sub_field('season'); ?></span>
           <a target="blank" href="<?php the_sub_field('url'); ?>">
             <span class="play-btn">Play Show</span>
             <?php 

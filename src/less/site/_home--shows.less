@@ -85,6 +85,19 @@
       box-shadow: 0 0 20px @black50;
       position: relative;
 
+      .caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 29;
+        color: @white;
+        padding: 8px;
+        .font_size(13);
+        font-weight: bold;
+        line-height: 1;
+        background: @black75;
+      }
+
       @btnHeight: 80px;
 
       .play-btn {
