@@ -3,7 +3,7 @@
       <a href="<?php the_sub_field('episode_url') ?>">
         <span class="play-btn">Play Show</span>
         <?php $image = get_sub_field('episode_thumbnail'); if( !empty($image) ): ?>
-        <img class="img-responsive" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+        <img class="img-responsive" src="<?php echo $image['sizes']['video-sm']; ?>" alt="<?php echo $image['alt']; ?>" />
         <?php endif; ?>
       </a>
     </div>
