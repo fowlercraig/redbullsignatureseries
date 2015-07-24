@@ -6617,6 +6617,12 @@ html {
 }
 @media screen and (min-width: 980px) {
   #show--title {
+    font-size: 55px;
+    font-size: 3.4375rem;
+  }
+}
+@media screen and (min-width: 1220px) {
+  #show--title {
     font-size: 72px;
     font-size: 4.5rem;
   }

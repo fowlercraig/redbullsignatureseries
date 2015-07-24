@@ -33,8 +33,10 @@
       <div class="fs-row showlist slider royalslider rsMinW show" id="home--recent-slider">
         <?php include locate_template('parts/show/assc-videos.php' ); ?>
       </div>
+      <?php if( have_rows('previous_seasons') ): ?>
       <span class="arrow arrow-left"><a href="#" class="ss-gizmo ss-navigateleft"></a></span>
       <span class="arrow arrow-right"><a href="#" class="ss-gizmo ss-navigateright"></a></span>  
+      <?php endif; ?>
     </section>
 
     </div>
