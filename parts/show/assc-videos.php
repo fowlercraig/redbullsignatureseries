@@ -2,7 +2,8 @@
 
 <?php $counter = 'video' ?>
 
-<?php // include locate_template('/parts/home/show-posts-page.php' ); ?>
+<?php include locate_template('/parts/home/show-posts-page.php' ); ?>
+
 
 <?php while ( have_rows('previous_seasons') ) : the_row(); ?>
 

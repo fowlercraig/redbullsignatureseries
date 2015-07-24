@@ -7,9 +7,10 @@
 
 <div <?php post_class('show recent rsContent'); ?>>
   <div class="fs-row">
-    <div class="fs-cell fs-lg-11 fs-md-5 fs-sm-3 fs-centered">
+    <div class="fs-cell fs-lg-12 fs-md-5 fs-sm-3 fs-centered">
       <div class="fs-row show--info">
-        <div class="video fs-cell fs-lg-8 fs-md-6 fs-sm-3">
+        <div class="video fs-cell fs-lg-12 fs-md-6 fs-sm-3">
+          <span class="caption">Signature Series 2015</span>
           <?php if ( $end_date_passed_check->format('Ymd') > date('Ymd') ): ?>
           <?php the_post_thumbnail( 'video-sm', array( 'class' => 'img-responsive' ) ); ?>
           <?php else: ?>
@@ -19,7 +20,7 @@
           </a>
           <?php endif; ?>
         </div>
-        <div class="desc fs-cell fs-lg-4 fs-md-6 fs-sm-3">
+        <div class="desc fs-cell fs-lg-4 fs-md-6 fs-sm-3 hide">
           <div class="fs-row">
             <div class="centered">
               <header class="fs-cell fs-lg-12 fs-md-3 fs-sm-3">
