@@ -107,8 +107,8 @@ opacity: 1;
         </div>
         <div class="fs-cell fs-lg-6 fs-md-hide fs-sm-hide text-right">
           <menu><?php echo strip_tags(wp_nav_menu( $menuParameters ), '<a>' ); ?></menu>
-          <a target="blank" class="social ss-social-circle ss-twitter"   alt="twitter"   href="https://www.facebook.com/RedBullSignatureSeries"></a>
-          <a target="blank" class="social ss-social-circle ss-facebook"  alt="facebook"  href="https://twitter.com/rbsigseries"></a>
+          <a target="blank" class="social ss-social-circle ss-facebook"   alt="facebook"   href="https://www.facebook.com/RedBullSignatureSeries"></a>
+          <a target="blank" class="social ss-social-circle ss-twitter"  alt="twitter"  href="https://twitter.com/rbsigseries"></a>
           <a target="blank" class="social ss-social-circle ss-instagram" alt="instagram" href="https://instagram.com/rbsigseries/"></a>
         </div>
       </div>
