@@ -86,16 +86,28 @@
       position: relative;
 
       .caption {
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        z-index: 29;
         color: @white;
         padding: 8px;
         .font_size(13);
         font-weight: bold;
         line-height: 1;
         background: @rb-red;
+        display: inline-block;
+
+        &.big {
+          clear: both;
+          position: relative;
+          top: -3px;
+          background: darken(@rb-red, 10%)!important;
+        }
+
+        &-wrap {
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          z-index: 29;
+        }
+
       }
 
       @btnHeight: 80px;

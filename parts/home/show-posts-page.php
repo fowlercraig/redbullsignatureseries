@@ -11,11 +11,15 @@
       <div class="fs-row show--info">
         <div class="video fs-cell fs-lg-12 fs-md-6 fs-sm-3">
           
+          <div class="caption-wrap">
           <?php if (get_field('teaser_embed')): ?>
           <span class="caption">2015</span>
           <?php else: ?>
-          <span class="caption">2015: Coming Soon</span>
+
+          <span class="caption">2015: Coming Soon</span><br>
+          <span class="caption big">Airs on NBC: <?php echo $date->format('M d, Y'); ?> @ <?php the_field('air_time'); ?></span>
           <?php endif; ?>
+          </div>
 
           <?php if ( $end_date_passed_check->format('Ymd') > date('Ymd') ): ?>
           <?php the_post_thumbnail( 'video-sm', array( 'class' => 'img-responsive' ) ); ?>
