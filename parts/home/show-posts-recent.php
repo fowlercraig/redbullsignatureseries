@@ -34,7 +34,7 @@
       </div>
     </div>
   </div>
-  <div id="recent-<?php echo $counter; ?>" class="video-popup mfp-hide">
+  <div id="recent-<?php echo $counter; ?>" class="video-popup mfp-hide" style="max-width: 900px; max-height: 440px; margin:auto;">
     <?php the_field('teaser_embed'); ?>
   </div> <!-- /#video-01 -->
 </div>

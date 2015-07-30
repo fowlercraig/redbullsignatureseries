@@ -12,9 +12,9 @@
         <div class="video fs-cell fs-lg-12 fs-md-6 fs-sm-3">
           
           <?php if (get_field('teaser_embed')): ?>
-          <span class="caption">Signature Series 2015</span>
+          <span class="caption">2015</span>
           <?php else: ?>
-          <span class="caption">Coming Soon: Signature Series 2015</span>
+          <span class="caption">2015: Coming Soon</span>
           <?php endif; ?>
 
           <?php if ( $end_date_passed_check->format('Ymd') > date('Ymd') ): ?>

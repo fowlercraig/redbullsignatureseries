@@ -7,7 +7,7 @@
       'key'           => 'next_air_date',
       'value'         =>  date('Ymd'),
       'type'          => 'DATE',
-      'compare'       => '>'
+      'compare'       => '>='
     )
   );
 
@@ -40,6 +40,8 @@
   if ( $end_date_passed_check->format('Ymd') < date('Ymd') ) {
     $date_passed = 'past';
   }
+
+
 
   $thumb_id = get_post_thumbnail_id();
   $thumb_url_array = wp_get_attachment_image_src($thumb_id, 'video-lg', true);

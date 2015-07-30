@@ -45,7 +45,7 @@
 
 <article class="show fs-cell fs-xl-3 fs-lg-4 fs-md-3 fs-sm-3">
     <div class="video">
-      <a href="<?php the_sub_field('episode_url') ?>">
+      <a class="popup-video" href="#recent-<?php echo $counter; ?>">
         <span class="play-btn">Play Show</span>
         <?php the_post_thumbnail( 'video-sm', array( 'class' => 'img-responsive' ) ); ?>
       </a>
@@ -53,9 +53,12 @@
     <div class="desc">
       <header>
         <span class="show--counter"><?php echo $counter; ?></span>
-        <h3><a href="<?php the_sub_field('episode_url') ?>"><?php the_title(); ?></a></h3>
+        <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
       </header>
     </div>
+    <div id="recent-<?php echo $counter; ?>" class="video-popup mfp-hide" style="max-width: 900px; max-height: 440px; margin:auto;">
+      <?php the_field('teaser_embed'); ?>
+    </div> <!-- /#video-01 -->
 </article>
 
 <?php
