@@ -93,11 +93,13 @@
         line-height: 1;
         background: @rb-red;
         display: inline-block;
+        position: relative!important;
 
         &.big {
           clear: both;
           position: relative;
           top: -3px;
+          .font_size(18);
           background: darken(@rb-red, 10%)!important;
         }
 
