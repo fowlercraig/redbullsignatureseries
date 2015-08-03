@@ -53,7 +53,10 @@
     <div class="desc">
       <header>
         <span class="show--counter"><?php echo $counter; ?></span>
-        <h3><a href="<?php the_sub_field('episode_url') ?>"><?php the_title(); ?></a></h3>
+        <h3>
+          <a href="<?php the_sub_field('episode_url') ?>"><?php the_title(); ?></a>
+          <small><?php echo $date->format('M d, Y'); ?></small>
+        </h3>
       </header>
     </div>
 </article>

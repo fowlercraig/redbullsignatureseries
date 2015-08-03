@@ -152,7 +152,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 31153,
+		"initialSize": 78775,
 		"inputAbbreviatedPath": "\/assets\/img\/nbcs-stacked-logo.png",
 		"outputAbbreviatedPath": "\/assets\/img\/nbcs-stacked-logo.png",
 		"outputPathIsOutsideProject": 0,
@@ -218,7 +218,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 590827,
+		"initialSize": 253248,
 		"inputAbbreviatedPath": "\/assets\/img\/sig-series-bg-2.jpg",
 		"outputAbbreviatedPath": "\/assets\/img\/sig-series-bg-2.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -2590,6 +2590,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/page.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/parts\/home\/comingsoon.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/parts\/home\/comingsoon.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -7504,6 +7513,15 @@
 		"randomFootnoteNumbers": 0,
 		"useCompatibilityMode": 0
 		},
+	"\/src\/css\/_footer.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/css\/_footer.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/src\/css\/addthisevent.theme7.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -8340,7 +8358,7 @@
 	"coffeeMinifyOutput": 1,
 	"coffeeOutputStyle": 0,
 	"coffeeSyntaxCheckerStyle": 1,
-	"externalServerAddress": "http:\/\/redbullsignatureseries.dev",
+	"externalServerAddress": "http:\/\/signatureseries.dev",
 	"externalServerPreviewPathAddition": "",
 	"genericWebpageFileExtensionsString": "html, htm, shtml, shtm, xhtml, php, jsp, asp, aspx, erb, ctp",
 	"hamlAutoOutputPathEnabled": 1,
