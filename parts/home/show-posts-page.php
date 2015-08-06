@@ -16,7 +16,7 @@
           <span class="caption">2015</span>
           <?php else: ?>
 
-          <span class="caption">2015: Coming Soon</span><br>
+          <!--<span class="caption">2015: Coming Soon</span><br>-->
           <span class="caption big">Airs on NBC: <?php echo $date->format('M d, Y'); ?> @ <?php the_field('air_time'); ?></span>
           <?php endif; ?>
           </div>
