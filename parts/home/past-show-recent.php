@@ -9,6 +9,14 @@
     )
   );
 
+  $published = array(
+    array(
+      'key'           => 'publish_video',
+      'value'         => '1',
+      'compare'       => '=='
+    )
+  );
+
   $args = array (
 
     'posts_per_page' => 3,
@@ -18,7 +26,8 @@
     'order'          => 'DESC',
     'orderby'        => 'meta_value_num',
     'paged'          => $paged,
-    'meta_query'     => $meta_query
+    'meta_query'     => $meta_query,
+    'meta_query'     => $published
 
   );
 
