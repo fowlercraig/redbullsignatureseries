@@ -293,7 +293,7 @@
 		},
 	"\/assets\/js\/scripts.min.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/js\/scripts.min.js",
 		"outputAbbreviatedPath": "\/assets\/js\/min\/scripts.min-min.js",
@@ -7666,9 +7666,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/src\/js\/scripts.js",
-		"outputAbbreviatedPath": "\/src\/js\/min\/scripts-min.js",
+		"outputAbbreviatedPath": "\/assets\/js\/scripts.min.js",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
