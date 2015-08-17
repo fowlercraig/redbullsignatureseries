@@ -11,3 +11,5 @@ rsync -avz wearegiants.net@s147445.gridserver.com:/nfs/c08/h03/mnt/147445/domain
 sftp://104.130.146.130//home/www/redbullsignatureseries.com/web/public
 
 ssh cfowler@104.130.146.130 xuiHeep9taijuth
+
+rsync -avz /nfs/c08/h03/mnt/147445/domains/glimpses.com/html/ /nfs/c08/h03/mnt/147445/domains/glimpses2015.com/html/
