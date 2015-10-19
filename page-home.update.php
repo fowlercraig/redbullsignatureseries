@@ -47,7 +47,7 @@
                       <h4>2015 Season Partners:</h4>
                       <a href="http://gopro.com/" target="_blank"><img src="/assets/img/gopro.png"   class="img-responsive" alt="GoPro" /></a>
                       <a href="http://synthetics.pennzoil.com/" target="_blank"><img src="/assets/img/pennzoil.png" class="img-responsive" alt="Pennzoil Synthetics" /></a>
-                      <a href="http://app.appsflyer.com/com.samsung.milk.milkvideo?pid=partner&c=redbull" target="_blank"><img src="/assets/img/samsung.png" class="img-responsive" alt="Samsung Milk Video" /></a>
+                      <!--<a href="http://app.appsflyer.com/com.samsung.milk.milkvideo?pid=partner&c=redbull" target="_blank"><img src="/assets/img/samsung.png" class="img-responsive" alt="Samsung Milk Video" /></a>-->
                       <a href="http://www.polaris.com/en-us/rzr-side-by-side" target="_blank"><img src="/assets/img/polaris.png" class="img-responsive" alt="Polaris RZR" /></a>
                     </div>
                   </div>
