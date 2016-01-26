@@ -23,7 +23,7 @@
   <section id="home--shows">
     <div class="fs-row">
       <div class="fs-cell fs-lg-11 fs-md-6 fs-sm-3 fs-centered">
-        <h3 class="section-title text-center spaced top">Red Bull Signature Series 2015</h3>
+        <h3 class="section-title text-center spaced top">Red Bull Signature Series <?php echo $currentSeason; ?></h3>
         <div class="arrow down short"><hr></div>
           <div class="showlist soon grid fs-row">
           <div class="fs-row">
@@ -44,10 +44,9 @@
                     </div>
                     <hr class="invisible">
                     <div id="home--shows-sponsors" class="text-center">
-                      <h4>2015 Season Partners:</h4>
-                      <a href="http://gopro.com/" target="_blank"><img src="/assets/img/gopro.png"   class="img-responsive" alt="GoPro" /></a>
+                      <h4><?php echo $currentSeason; ?> Season Partners:</h4>
+                      <a href="http://www.bfgoodrichtires.com" target="_blank"><img src="/assets/img/BFG-Logo-4C.png"   class="img-responsive" alt="BFGoodrich" /></a>
                       <a href="http://synthetics.pennzoil.com/" target="_blank"><img src="/assets/img/pennzoil.png" class="img-responsive" alt="Pennzoil Synthetics" /></a>
-                      <!--<a href="http://app.appsflyer.com/com.samsung.milk.milkvideo?pid=partner&c=redbull" target="_blank"><img src="/assets/img/samsung.png" class="img-responsive" alt="Samsung Milk Video" /></a>-->
                       <a href="http://www.polaris.com/en-us/rzr-side-by-side" target="_blank"><img src="/assets/img/polaris.png" class="img-responsive" alt="Polaris RZR" /></a>
                     </div>
                   </div>

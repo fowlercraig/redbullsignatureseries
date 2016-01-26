@@ -1,5 +1,5 @@
 <article class="show fs-cell fs-xl-3 fs-lg-4 fs-md-3 fs-sm-3">
-    <div class="video">
+    <div class="video" style="max-width:100%">
       <a href="<?php the_sub_field('episode_url') ?>">
         <span class="play-btn">Play Show</span>
         <?php $image = get_sub_field('episode_thumbnail'); if( !empty($image) ): ?>
