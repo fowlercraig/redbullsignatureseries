@@ -71,6 +71,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/BFG-Logo-4C.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 11202,
+		"inputAbbreviatedPath": "\/assets\/img\/BFG-Logo-4C.png",
+		"outputAbbreviatedPath": "\/assets\/img\/BFG-Logo-4C.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/bg.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
