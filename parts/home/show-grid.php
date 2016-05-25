@@ -1,4 +1,4 @@
-<article <?php post_class('show ' . $date_passed . ' ' . $showWidth . ' '); ?>>
+<article <?php post_class('equal show ' . $date_passed . ' ' . $showWidth . ' '); ?>>
   <div class="fs-row">
     <div class="video fs-cell fs-all-full">
       <?php if ( $end_date_passed_check->format('Ymd') < date('Ymd') ): ?>

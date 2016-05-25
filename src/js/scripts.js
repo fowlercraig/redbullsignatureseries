@@ -22,6 +22,12 @@ function equalized(){
     target: ".sizer-item"
   });
 
+  $(window).load(function(){
+    $(".equal-parent").equalize({
+      target: ".equal"
+    });
+  });
+
   // if( $('#sidebar-sticky').length ) {
   //   var sticky = new Waypoint.Sticky({
   //     element: $('#sidebar-sticky')[0],

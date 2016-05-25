@@ -29,7 +29,7 @@
           <div class="fs-row">
             <div class="fs-cell fs-all-full">
               <div class="fs-row">
-                <div class="fs-cell fs-lg-9 fs-md-4 fs-sm-3 sizer-item">
+                <div class="fs-cell fs-lg-9 fs-md-4 fs-sm-3 sizer-item equal-parent">
                   <?php include locate_template('parts/home/upcoming-show-grid.php' ); ?>
                   <?php include locate_template('parts/home/past-show-grid.php' ); ?>
                 </div>
