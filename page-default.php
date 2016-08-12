@@ -23,14 +23,14 @@
                   <a href="#tab-2016" class="tab" data-tabs-group="tab-group"><h4>2016 <span class="show-min">Season</span></h4></a>
                   <a href="#tab-2015" class="tab" data-tabs-group="tab-group"><h4>2015 <span class="show-min">Season</span></h4></a>
                   <a href="#tab-2014" class="tab" data-tabs-group="tab-group"><h4>2014 <span class="show-min">Season</span></h4></a>
-                  <a href="#tab-2013" class="tab" data-tabs-group="tab-group"><h4>2013 <span class="show-min">Season</span></h4></a>
-                  <a href="#tab-2012" class="tab" data-tabs-group="tab-group"><h4>2012 <span class="show-min">Season</span></h4></a>
+                  <!--<a href="#tab-2013" class="tab" data-tabs-group="tab-group"><h4>2013 <span class="show-min">Season</span></h4></a>-->
+                  <!--<a href="#tab-2012" class="tab" data-tabs-group="tab-group"><h4>2012 <span class="show-min">Season</span></h4></a>-->
                 </nav>
                 <div id="tab-2016" class="tab-content"><?php include locate_template('parts/past/season-current.php'); ?></div>
                 <div id="tab-2015" class="tab-content"><?php include locate_template('parts/past/season-2015.php'); ?></div>
                 <div id="tab-2014" class="tab-content"><?php include locate_template('parts/past/season-2014.php'); ?></div>
-                <div id="tab-2013" class="tab-content"><?php include locate_template('parts/past/season-2013.php'); ?></div>
-                <div id="tab-2012" class="tab-content"><?php include locate_template('parts/past/season-2012.php'); ?></div>
+                <!--<div id="tab-2013" class="tab-content"><?php # include locate_template('parts/past/season-2013.php'); ?></div>-->
+                <!--<div id="tab-2012" class="tab-content"><?php # include locate_template('parts/past/season-2012.php'); ?></div>-->
               </div>
             </div>
           </div>
