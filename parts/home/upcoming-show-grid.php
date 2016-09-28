@@ -6,10 +6,37 @@
       'value'         =>  date('Ymd'),
       'type'          => 'DATE',
       'compare'       => '>='
-    )
+    ),
+    array(
+      'key'           => 'air_time',
+      'orderby'       => 'meta_value',
+      'order'         => DESC
+    ),
   );
 
-  $args = array (
+  $args = array(
+    'post_type'      => 'page',
+    'posts_per_page' => -1,
+    'meta_query' => array(
+        'relation' => 'AND',
+        'event_start_date_clause' => array(
+            'key'     => 'next_air_date',
+            'compare' => 'EXISTS',
+            'value'         =>  date('Ymd'),
+            'type'          => 'DATE',
+            'compare'       => '>='
+        ),
+        'event_start_time_clause' => array(
+            'key'     => 'air_time',
+        ), 
+    ),
+    'orderby' => array(
+        'event_start_date_clause' => 'ASC',
+        'event_start_time_clause' => 'ASC',
+    ),
+  );
+
+  $fargs = array (
 
     'posts_per_page' => -1,
     'post_type'      => 'page',
