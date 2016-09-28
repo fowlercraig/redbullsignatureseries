@@ -48,6 +48,7 @@
                       <a href="http://www.bfgoodrichtires.com" target="_blank"><img src="/assets/img/BFG-Logo-4C.png"   class="img-responsive" alt="BFGoodrich" /></a>
                       <a href="http://synthetics.pennzoil.com/" target="_blank"><img src="/assets/img/pennzoil.png" class="img-responsive" alt="Pennzoil Synthetics" /></a>
                       <a href="http://www.polaris.com/en-us/rzr-side-by-side" target="_blank"><img src="/assets/img/polaris.png" class="img-responsive" alt="Polaris RZR" /></a>
+                      <a href="http://www.lifeproof.com/en-us/source?s=redbullsignatureseries.com" target="_blank"><img src="/assets/img/lifeproof.png" class="img-responsive" alt="Lifeproof" /></a>
                     </div>
                   </div>
                 </aside>
