@@ -6,7 +6,12 @@
       'value'         =>  date('Ymd'),
       'type'          => 'DATE',
       'compare'       => '<'
-    )
+    ),
+    array(
+      'key'           => 'air_time',
+      'orderby'       => 'meta_value',
+      'order'         => DESC
+    ),
   );
 
   $published = array(
@@ -23,7 +28,7 @@
     'post_type'      => 'page',
     'post_parent'    => 66,
     'meta_key'       => 'next_air_date',
-    'order'          => 'DESC',
+    #'order'          => 'DESC',
     'orderby'        => 'meta_value_num',
     'paged'          => $paged,
     'meta_query'     => $meta_query,
