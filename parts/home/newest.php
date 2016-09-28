@@ -16,11 +16,29 @@
     'posts_per_page' => 1,
     'post_type'      => 'page',
     'post_parent'    => 66,
-    'meta_key'       => 'next_air_date',
-    'order'          => 'ASC',
-    'orderby'        => 'meta_value_num',
-    'paged'          => $paged,
-    'meta_query'     => $meta_query
+    #'meta_key'       => 'next_air_date',
+    #'order'          => 'ASC',
+    #'orderby'        => 'meta_value_num',
+    #'paged'          => $paged,
+    #'meta_query'     => $meta_query
+
+    'meta_query' => array(
+        'relation' => 'AND',
+        'event_start_date_clause' => array(
+            'key'     => 'next_air_date',
+            'compare' => 'EXISTS',
+            'value'         =>  date('Ymd'),
+            'type'          => 'DATE',
+            'compare'       => '>='
+        ),
+        'event_start_time_clause' => array(
+            'key'     => 'air_time',
+        ), 
+    ),
+    'orderby' => array(
+        'event_start_date_clause' => 'ASC',
+        'event_start_time_clause' => 'ASC',
+    ),
 
   );
 

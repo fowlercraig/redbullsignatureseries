@@ -1,6 +1,6 @@
 <?php Themewrangler::setup_page();get_header(/***Template Name: Homepage v2 */); ?>
 
-<!--<div id="home--loading"></div>-->
+<div id="home--loading"></div>
 
 <div id="home">
 
