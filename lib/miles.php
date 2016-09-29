@@ -27,7 +27,7 @@ function load_redbull_content() {
     foreach($api_data->result as $res) {
 
     	$featuredimage = $res->featuredimage;
-    	$title = 'title';
+    	$title = $res->title;
     	$publisheddate = date('F j, Y', strtotime($res->publisheddate));
     	$url = $res->url;
     	$teaser = $res->teaser;
