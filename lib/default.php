@@ -6,6 +6,7 @@
 
   function register_my_menu() {
     register_nav_menu('main-menu',__( 'Main Menu' ));
+    register_nav_menu('schedule-menu',__( 'Schedule' ));
   }
   add_action( 'init', 'register_my_menu' );
 
