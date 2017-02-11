@@ -35,16 +35,6 @@
 		"oAP": "\/archive.php",
 		"oF": 0
 		},
-	"\/assets\/css\/style.min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/assets\/css\/style.min-min.css",
-		"oF": 0,
-		"oS": 0
-		},
 	"\/assets\/css\/styles.min.css": {
 		"aP": 1,
 		"bl": 0,
