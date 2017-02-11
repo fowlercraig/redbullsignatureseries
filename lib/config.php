@@ -1,3 +1,3 @@
 <?php 
 
-  $currentSeason = '2016';
+  $currentSeason = '2017';
