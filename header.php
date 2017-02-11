@@ -81,7 +81,7 @@ opacity: 1;
   );
 ?>
 
-<body <?php body_class('fs-grid'); ?>>
+<body <?php body_class('fs-grid fs-grid-fluid'); ?>>
   <div id="wrapper" class="toggle">
 
     <script type="text/javascript">
