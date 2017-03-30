@@ -4,7 +4,6 @@ $showWidth = 'fs-cell fs-xl-6 fs-lg-6 fs-md-3 fs-sm-3';
 
 // Dependencies
 
-require_once locate_template('/lib/config.php');
 require_once locate_template('/lib/default.php');
 require_once locate_template('/lib/themewrangler.class.php');
 require_once locate_template('/lib/slug.php' );
@@ -50,4 +49,6 @@ remove_action( 'admin_print_styles', 'print_emoji_styles' );
 
 include_once locate_template('/lib/tw_config.php' );
 
-?>
+if( function_exists('acf_add_options_page') ) {
+  acf_add_options_page();
+}

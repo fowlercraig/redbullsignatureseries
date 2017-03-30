@@ -23,7 +23,7 @@
   <section id="home--shows">
     <div class="fs-row">
       <div class="fs-cell fs-lg-11 fs-md-6 fs-sm-3 fs-centered">
-        <h3 class="section-title text-center spaced top">Red Bull Signature Series <?php echo $currentSeason; ?></h3>
+        <h3 class="section-title text-center spaced top">Red Bull Signature Series <?php the_field('current_season', 'option'); ?></h3>
         <div class="arrow down short"><hr></div>
           <div class="showlist soon grid fs-row">
           <div class="fs-row">
@@ -44,11 +44,11 @@
                     </div>
                     <hr class="invisible">
                     <div id="home--shows-sponsors" class="text-center">
-                      <h4><?php echo $currentSeason; ?> Season Partners:</h4>
-                      <a href="http://www.bfgoodrichtires.com" target="_blank"><img src="/assets/img/BFG-Logo-4C.png"   class="img-responsive" alt="BFGoodrich" /></a>
-                      <a href="http://synthetics.pennzoil.com/" target="_blank"><img src="/assets/img/pennzoil.png" class="img-responsive" alt="Pennzoil Synthetics" /></a>
-                      <a href="http://www.polaris.com/en-us/rzr-side-by-side" target="_blank"><img src="/assets/img/polaris.png" class="img-responsive" alt="Polaris RZR" /></a>
-                      <a href="http://www.lifeproof.com/en-us/source?s=redbullsignatureseries.com" target="_blank"><img src="/assets/img/lifeproof.png" class="img-responsive" alt="Lifeproof" /></a>
+                      <h4><?php the_field('current_season', 'option'); ?> Season Partners:</h4>
+                      <?php $sponsors = get_field('sponsors', 'option'); ?>
+                      <?php foreach($sponsors as $image): ?>
+                      <a href="<?php echo $image['description']; ?>" target="_blank"><img src="<?php echo $image['url']; ?>"   class="img-responsive" alt="BFGoodrich" /></a><br>
+                      <?php endforeach; ?>
                     </div>
                   </div>
                 </aside>
